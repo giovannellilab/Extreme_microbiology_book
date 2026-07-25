@@ -5,7 +5,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
 [![giovannellilab](https://img.shields.io/badge/BY-Giovannelli_Lab-blue)](http:s//www.donatogiovannelli.com)
-[![Creative Commons Licence](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Creative Commons Licence](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![TeachBooks](https://img.shields.io/badge/Built%20with-TeachBooks-blue.svg)](https://teachbooks.io/)
 [![call-deploy-book](https://github.com/TeachBooks/template/actions/workflows/call-deploy-book.yml/badge.svg)](https://github.com/TeachBooks/template/actions/workflows/call-deploy-book.yml)
 
@@ -100,7 +100,7 @@ The manuscript is developed openly on GitHub. This allows the book to evolve as 
 
 ## Licence
 
-Unless otherwise indicated, the original content of this book is released under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Unless otherwise indicated, the original content of this book is released under the [Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/).
 
 Third-party figures, images and other material may be subject to different licences and should be treated according to their original terms.
 
