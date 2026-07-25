@@ -5,10 +5,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
 [![giovannellilab](https://img.shields.io/badge/BY-Giovannelli_Lab-blue)](http:s//www.donatogiovannelli.com)
-[![Creative Commons Licence](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![TeachBooks](https://img.shields.io/badge/Built%20with-TeachBooks-blue.svg)](https://teachbooks.io/)
+[![Creative Commons Licence](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)[![TeachBooks](https://img.shields.io/badge/Built%20with-TeachBooks-blue.svg)](https://teachbooks.io/)
 [![call-deploy-book](https://github.com/TeachBooks/template/actions/workflows/call-deploy-book.yml/badge.svg)](https://github.com/TeachBooks/template/actions/workflows/call-deploy-book.yml)
-
 
 ## About the book
 
