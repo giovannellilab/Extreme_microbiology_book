@@ -2,9 +2,9 @@
 chapter_title: "Life at low temperature: psychrophiles"
 chapter_slug: "psychrophiles"
 document_type: "publication_chapter"
-workflow_stage: 4
+workflow_stage: 6
 workflow_version: "1.0"
-document_version: "1.0"
+document_version: "1.1"
 editor: "Donato Giovannelli"
 status: "under review"
 created: "2026-08-09"
@@ -27,7 +27,7 @@ These categories are useful labels, not natural boundaries. A temperature optimu
 
 ### What counts as evidence at the lower limit?
 
-Claims about the lower temperature limit of life depend on what has been measured. Several levels of evidence must remain distinct:
+Claims about the lower temperature limit of life depend on what has been measured. Several forms of evidence must remain distinct:
 
 - **Detection** establishes that cells, DNA, RNA, proteins, lipids or other biological material are present.
 - **Survival** establishes that cells persist through an exposure and can subsequently recover or retain viability.
@@ -36,9 +36,9 @@ Claims about the lower temperature limit of life depend on what has been measure
 - **Growth** demonstrates a net increase in biomass, cell number or a validated population proxy.
 - **Reproduction** demonstrates the completion of cell division and production of new cells.
 
-Evidence at one level does not establish the levels below it in this list. DNA detected in ancient ice does not show that the source organism remained alive, and recovery of a cell after warming does not show that it was metabolically active while frozen. Even a biochemical reaction at subzero temperature does not establish cell division.
+These endpoints are not a strict ladder: survival, maintenance and metabolic activity measure partly different properties. Each supports only specific inferences. DNA detected in ancient ice does not show that the source organism remained alive, recovery of a cell after warming does not show that it was metabolically active while frozen, and a biochemical reaction at subzero temperature does not establish net growth or cell division.
 
-The permafrost bacterium *Planococcus halocryophilus* Or1 illustrates why this distinction matters. In one study, the organism grew at −15 °C in a liquid culture medium containing 18% NaCl and 7% glycerol, with an estimated generation time of about 50 days under those conditions. In a separate experiment, cells inoculated into sterile-permafrost microcosms mineralised radiolabelled acetate at −25 °C over 210 days {cite:p}`mykytczuk2013`. The first result supports growth at −15 °C in a high-solute liquid medium. The second supports low metabolic activity at −25 °C; it does not demonstrate reproduction there. Similarly, incorporation of radiolabelled acetate into lipids by a natural permafrost community at −20 °C demonstrates activity under the assay conditions, but neither identifies every active organism nor proves population growth {cite:p}`rivkina2000`.
+The permafrost bacterium *Planococcus halocryophilus* Or1 illustrates why this distinction matters. In one study, the organism grew at −15 °C in a liquid culture medium reported as containing 18% NaCl and 7% glycerol; the paper did not state the percentage basis. The estimated generation time was about 50 days under those conditions. In a separate experiment, cells inoculated into sterile-permafrost microcosms mineralised radiolabelled acetate at −25 °C over 210 days {cite:p}`mykytczuk2013`. The first result supports growth at −15 °C in a high-solute liquid medium. The second supports low metabolic activity at −25 °C; it does not demonstrate reproduction there. Similarly, incorporation of radiolabelled acetate into lipids by a natural permafrost community at −20 °C demonstrates activity under the assay conditions, but neither identifies every active organism nor proves population growth {cite:p}`rivkina2000`.
 
 ### Liquid water below 0 °C
 
@@ -46,7 +46,7 @@ Subzero temperature does not necessarily mean that all environmental water is so
 
 There is consequently no universal lower temperature for life that can be separated from phase state, solution chemistry, timescale and measurement method. A defensible limit claim must state what biological process was observed, for how long, in which medium or microhabitat, and with which controls.
 
-<!-- FIGURE PLACEHOLDER: evidence hierarchy and the distinction between growth at −15 °C and metabolic activity at −25 °C -->
+<!-- FIGURE PLACEHOLDER: distinct evidence endpoints and the distinction between growth at −15 °C and metabolic activity at −25 °C -->
 
 ## 2. What low temperature does to microbial cells
 
@@ -70,7 +70,7 @@ Nucleic acids pose a related problem. Lower temperature stabilises many base-pai
 
 ### Freezing and solute concentration
 
-When extracellular water freezes, most dissolved ions and organic molecules are excluded from the ice lattice. They accumulate in the residual liquid, exposing cells to changing ionic strength, osmotic pressure and water activity. Water can leave a cell as the extracellular solution becomes more concentrated, and growing ice can impose mechanical constraints. Intracellular ice is usually especially damaging because crystals disrupt membranes and macromolecular organisation, but whether ice nucleates inside or outside a cell depends on the cooling regime and the presence of nucleating surfaces.
+When extracellular water freezes, most dissolved ions and organic molecules are excluded from the ice lattice. They accumulate in the residual liquid, exposing cells to changing ionic strength, osmotic pressure and water activity. Water can leave a cell as the extracellular solution becomes more concentrated, and growing ice can impose mechanical constraints. Intracellular ice is usually especially damaging because crystals disrupt membranes and macromolecular organisation, but whether ice nucleates inside or outside a cell depends on the cooling regime and the presence of nucleating surfaces {cite:p}`deming2002`.
 
 The biological problem is therefore coupled: the same fall in temperature that slows catalysis can order the membrane, stabilise RNA structures, reduce the liquid-water fraction and increase solute concentrations around the cell. Adaptation must maintain a workable balance across all of these effects.
 
@@ -86,7 +86,7 @@ Cells can adjust membrane composition to keep the bilayer within a functional ph
 
 The familiar statement that psychrophiles “contain more unsaturated fatty acids” captures only one common mechanism. It is not a universal rule. Lipid responses differ among bacterial lineages, and archaeal membranes require separate treatment because their hydrophobic chains are ether-linked to glycerol and can have architectures unlike bacterial fatty-acid bilayers. In the Antarctic methanogenic archaeon *Methanococcoides burtonii*, direct lipid analysis found greater unsaturation of ether-linked phospholipids in cells grown at 4 °C than at 23 °C {cite:p}`nichols2004`. This demonstrates one archaeal route to temperature-dependent membrane adjustment; it does not define a general rule for all Archaea.
 
-Even within Bacteria, simple composition indices can mislead. In *P. halocryophilus* Or1, the reported ratio of branched to saturated fatty acids decreased at the lowest experimental temperatures rather than following a universal expectation {cite:p}`mykytczuk2013`. The relevant outcome is a membrane that supports selective permeability and protein function, not maximisation of any single lipid category.
+Even within Bacteria, simple composition indices can mislead. In *P. halocryophilus* Or1, the reported abundance of branched fatty acids decreased while that of saturated fatty acids increased at the lowest experimental temperatures, contrary to a common expectation for cold adaptation in Gram-positive bacteria {cite:p}`mykytczuk2013`. The relevant outcome is a membrane that supports selective permeability and protein function, not maximisation of any single lipid category.
 
 Maintaining membrane function supports transport and energy conservation. Transporters must cycle between conformations, respiratory proteins must exchange electrons or ions, and the bilayer must limit uncontrolled leakage. The membrane is therefore a point where molecular adaptation connects directly to metabolic performance. Pigments and carotenoids may modify membrane properties or protect against oxidative and photochemical stress in particular organisms, but pigmentation should not be presented as a general cold-adaptation mechanism without organism-specific evidence.
 
@@ -116,7 +116,7 @@ Genomics and transcriptomics can reveal candidate mechanisms. A gene enriched in
 
 ### Ice, compatible solutes and extracellular microenvironments
 
-Ice-interacting systems act through several distinct mechanisms. An *ice-binding protein* adsorbs to an ice surface and may inhibit crystal growth or recrystallisation, change crystal shape, or mediate adhesion. An *ice-nucleating protein* promotes the formation of ice at a warmer subzero temperature than would otherwise occur. Nucleation can be advantageous when controlled extracellular freezing reduces the chance of abrupt, deeply supercooled freezing, but it is the opposite physical action from inhibiting ice growth. Neither mechanism alone establishes freezing avoidance or freeze tolerance at the level of the organism {cite:p}`dolev2016`.
+Ice-interacting systems act through several distinct mechanisms. An *ice-binding protein* adsorbs to an ice surface and may inhibit crystal growth or recrystallisation, change crystal shape, or mediate adhesion. An *ice-nucleating protein* promotes the formation of ice at a warmer subzero temperature than would otherwise occur, the opposite physical action from inhibiting ice growth. Whether this physical effect benefits the producing organism is system-dependent and requires direct evidence. Neither ice binding nor ice nucleation alone establishes freezing avoidance or freeze tolerance at the level of the organism {cite:p}`dolev2016`.
 
 The Antarctic bacterium *Marinomonas primoryensis* demonstrates an unexpected use of ice binding. Direct observations in a microfluidic system showed motile cells attaching to ice; antibodies directed against the ice-binding region blocked this attachment {cite:p}`bardolev2016`. Structural work showed that the ice-binding region forms part of a very large, multidomain surface adhesin that can connect the bacterium with ice and diatoms {cite:p}`guo2017`. In this system, the strongest demonstrated cell-level role is adhesion and positioning near an ice surface, not secretion of a soluble antifreeze that prevents the surrounding lake from freezing.
 
@@ -132,11 +132,11 @@ Ice-binding proteins, compatible solutes and EPS can thus influence the liquid m
 
 ## 4. Cold never acts alone
 
-Natural cold habitats are polyextreme because temperature changes the effects of other environmental variables. The clearest example is the interaction between cold and salinity. When water freezes, salts are excluded into the residual liquid. Continued cooling decreases the liquid fraction and can raise solute concentrations, lower water activity and alter ionic ratios. A cell in sea ice or frozen soil is therefore not exposed to “cold plus salt” as two independent stresses: freezing itself connects them {cite:p}`deming2002`.
+Natural cold habitats often impose interacting environmental constraints because temperature changes the effects of other variables. The clearest example is the interaction between cold and salinity. When water freezes, salts are excluded into the residual liquid. Continued cooling decreases the liquid fraction and can raise solute concentrations, lower water activity and alter ionic ratios. A cell in sea ice or frozen soil is therefore not exposed to “cold plus salt” as two independent stresses: freezing itself connects them {cite:p}`deming2002`.
 
-The lower-limit experiment with *P. halocryophilus* makes this coupling experimentally visible. Growth at −15 °C occurred in medium containing 18% NaCl and 7% glycerol, which remained liquid under the test conditions {cite:p}`mykytczuk2013`. Responses measured in that culture cannot all be attributed uniquely to temperature. Some may address osmotic or ionic stress, and some may help under both conditions. Full treatment of osmoadaptation, compatible-solute strategies and water activity belongs in Chapter 21, *Halophiles*.
+The lower-limit experiment with *P. halocryophilus* makes this coupling experimentally visible. Growth at −15 °C occurred in the same medium reported as containing 18% NaCl and 7% glycerol, which remained liquid under the test conditions {cite:p}`mykytczuk2013`. Responses measured in that culture cannot all be attributed uniquely to temperature. Some may address osmotic or ionic stress, and some may help under both conditions. Full treatment of osmoadaptation, compatible-solute strategies and water activity belongs in Chapter 21, *Halophiles*.
 
-The deep ocean couples cold with high hydrostatic pressure. Both variables affect membrane organisation, protein conformations, transport and reaction rates, and their combined influence need not be the sum of effects measured separately. An organism that inhabits cold deep water must maintain its membrane and molecular machinery under both constraints. Pressure-adaptation mechanisms and cultivation under in situ pressure belong in Chapter 22, *Piezophiles*, and the environmental gradients belong in Chapter 26, *Oceans*.
+The deep ocean couples cold with high hydrostatic pressure. Both variables affect membrane organisation, protein conformations, transport and reaction rates, and their combined influence need not be the sum of effects measured separately {cite:p}`deming2002`. An organism that inhabits cold deep water must maintain its membrane and molecular machinery under both constraints. Pressure-adaptation mechanisms and cultivation under in situ pressure belong in Chapter 22, *Piezophiles*, and the environmental gradients belong in Chapter 26, *Oceans*.
 
 Radiation, desiccation and oligotrophy can also modify cold adaptation. Exposed snow and ice receive intense radiation; frozen terrestrial habitats may combine low temperature with little available water; and many cold environments supply substrates slowly. These interactions should be invoked only when they change the mechanism being explained. Inventing categories such as “radio-psychrophile” adds less understanding than identifying which radiation damage occurs and how repair intersects with slow cold metabolism.
 
@@ -144,7 +144,7 @@ Radiation, desiccation and oligotrophy can also modify cold adaptation. Exposed 
 
 ## 5. Ecology and evolution
 
-Psychrophiles occur wherever low temperature persists long enough to shape biological performance: in deep ocean water, marine and freshwater ice, polar and alpine soils, glaciers, snow, permafrost, cold caves and engineered refrigerated systems. This list indicates breadth, but location alone does not explain distribution. The useful ecological questions are whether liquid water persists, how solutes are concentrated, which resources are supplied, how temperature varies, and which additional constraints accompany the cold {cite:p}`lauro2013`.
+Cold-adapted and cold-growing microorganisms occur wherever low temperature persists long enough to shape biological performance: in deep ocean water, marine and freshwater ice, polar and alpine soils, glaciers, snow, permafrost, cold caves and engineered refrigerated systems. The latter commonly select psychrotolerant or psychrotrophic microorganisms rather than organisms that meet the conventional psychrophile thresholds. This list indicates breadth, but location alone does not explain distribution. The useful ecological questions are whether liquid water persists, how solutes are concentrated, which resources are supplied, how temperature varies, and which additional constraints accompany the cold {cite:p}`lauro2013`.
 
 A brine channel in sea ice, a deep marine sediment and an alpine soil may have similar temperatures but impose different transport, pressure, salinity and resource regimes. These differences select for different combinations of traits. They also explain why an organism's laboratory temperature optimum cannot be used alone to predict where it will compete successfully. Growth rate matters, but so do substrate affinity, maintenance cost, resistance to fluctuations and interactions with other organisms.
 
@@ -177,7 +177,7 @@ Ice-interacting systems also inspire technological ideas, but their mechanisms m
 - Adaptations address particular consequences: membrane remodelling supports transport and energy conservation; altered enzyme dynamics support catalytic flux; RNA remodelling supports gene expression; and compatible solutes or extracellular systems modify freezing and osmotic conditions.
 - Adaptation involves trade-offs. Cold catalytic activity may reduce stability or affinity, and a membrane suited to cold may become too permeable when warmed.
 - Evidence must be named precisely. Detection, survival, maintenance, metabolic activity, growth and reproduction are not interchangeable.
-- Natural cold habitats are polyextreme. Freezing couples cold to salinity and water availability, while deep environments couple cold with pressure.
+- Natural cold habitats often impose interacting environmental constraints. Freezing couples cold to salinity and water availability, while deep environments couple cold with pressure.
 - Psychrophily is a physiological and ecological strategy distributed across many lineages, not a taxonomic group with one universal molecular programme.
 
 ## Further reading
