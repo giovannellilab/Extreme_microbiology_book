@@ -24,9 +24,50 @@ Classify every actionable comment:
 - **Minor** — local correction that does not alter the argument.
 - **Editorial** — clarity or presentation issue without scientific impact.
 
+## Scope discipline
+
+Do not recommend adding material simply because it is scientifically interesting.
+
+Recommend additions only when:
+
+- a factual error would otherwise remain;
+- the approved chapter job cannot be fulfilled;
+- a key concept lacks adequate support;
+- an essential scientific caveat is missing.
+
+Do not ask for greater completeness for its own sake. Judge whether the chapter fulfils its approved educational objective, not whether it covers every aspect of the topic.
+
 ## Required output
 
 Create `chapters/<chapter-slug>/SCIENTIFIC_REVIEW.md`. For each finding, identify the location, problem, evidence and recommended action. Report before rewriting. Apply accepted changes only in a separate revision pass so the review remains independently auditable.
+
+The review must also contain the following sections.
+
+## Scientific strengths
+
+List up to five scientifically strong aspects of the chapter, such as particularly clear mechanistic explanation, appropriate handling of uncertainty, strong evidence use, good distinction between evidence levels or especially effective scientific synthesis.
+
+## Scientific quality
+
+Choose one:
+
+- **Excellent**
+- **Good**
+- **Adequate**
+- **Unsatisfactory**
+
+Provide a brief justification.
+
+## Publication readiness
+
+Choose one:
+
+- **Ready**
+- **Minor revision**
+- **Major revision**
+- **Reject**
+
+Provide a brief justification.
 
 ## Approval gate
 
