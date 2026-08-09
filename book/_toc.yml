@@ -19,3 +19,6 @@ parts:
     - file: references.md
     - file: changelog.md
     - file: credits.md
+  - caption: Part III — Extremophiles and microbial diversity
+    chapters:
+    - file: 17_psychrophiles.md
