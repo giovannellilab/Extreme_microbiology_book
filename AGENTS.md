@@ -115,6 +115,8 @@ Instead:
 
 Preserve the **reasoning, examples, conceptual sequence and pedagogical intent** of the source.
 
+During chapter reconstruction, preserve memorable explanations, intuitive causal reasoning, elegant transitions and scientifically sound analogies. Integrate approximately five to ten concise teaching anchors that clarify difficult ideas or connect mechanisms, without turning them into slogans.
+
 Do not preserve weak wording merely because it exists.
 
 Do not replace distinctive teaching logic with generic textbook prose.
@@ -242,7 +244,7 @@ Do not create exhaustive:
 * literature reviews;
 * adaptation lists.
 
-Select representative examples that explain general principles.
+Select representative examples that explain general principles. Every organism included must perform an explanatory role; do not include an organism solely because it is well known.
 
 When useful material would interrupt the chapter narrative, propose a:
 
@@ -442,7 +444,7 @@ Output:
 
 ## Chapter reconstruction
 
-Convert approved source material into the appropriate chapter template while following the style guide.
+Reconstruct an approximately 90% publication-ready chapter from the approved architecture, source audit, evidence package, style guide and chapter template. This is not a new literature review. Preserve the source's strongest scientifically correct teaching logic, use figures instead of unnecessary explanatory expansion, and alternate explanation, evidence and synthesis. Produce both the publication chapter and a concise, non-rendered `EDITORIAL_REPORT.md` for the editor.
 
 ## Reference audit
 
