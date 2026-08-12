@@ -54,6 +54,21 @@ Recognise when a conceptual diagram would explain a relationship more effectivel
 
 Alternate explanation, evidence and synthesis. Avoid long uninterrupted blocks of mechanistic detail. Where appropriate, use an essential figure, a concise table, a representative case or a short synthesis paragraph to restore rhythm without fragmenting the narrative.
 
+### Specificity and accessibility
+
+- Apply the **specificity test** before completion: identify sentences that could be copied unchanged into another extremophile chapter. Delete them, move the underlying concept to a foundational chapter, or make them parameter-specific.
+- For interdisciplinary readers, introduce the intuitive physical or chemical consequence before specialist terminology. Do not assume microbiology, biochemistry or physical-chemistry knowledge beyond what the book has already taught.
+- For complex mechanisms, establish the simplest causal model first. Add exceptions and qualifications only after the reader can understand the core mechanism.
+- Never refer the reader to another chapter before providing enough explanation to understand the current argument. Give the minimum sufficient explanation, then cross-reference the chapter containing the full treatment.
+
+### Examples and ecological significance
+
+- Avoid taxonomic catalogues, but include approximately three to six memorable representative organisms in each extremophile chapter when suitable. Every example must illustrate a distinct mechanism, discovery, ecological role or limit.
+- A representative example should normally perform its main pedagogical work once. Later mentions must add new information or be brief cross-references rather than retelling the experiment.
+- Avoid generic claims that microorganisms are “important” in an ecosystem. Prefer specific processes, quantitative magnitudes, fluxes, reservoirs or clearly defined ecological effects where robust evidence exists.
+- Preserve a small number of memorable, scientifically sound lecture phenomena when they improve understanding, scientific relevance or the intellectual character of the course, even when they are not required for the minimum mechanistic explanation.
+- When several mechanisms are introduced as parallel strategies, present them at comparable conceptual resolution unless there is a clear scientific reason for asymmetry.
+
 ## Required output and gate
 
 Stage 4 always produces two deliverables:
@@ -85,3 +100,4 @@ Before hand-off:
 - run the available TeachBooks build and distinguish new errors from pre-existing warnings;
 - confirm that the Editorial Report reflects the reconstructed chapter and the unresolved Evidence Package items;
 - confirm that existing workflow references remain valid.
+- confirm that the specificity test, causal-chain rule, representative-example distribution, parallel-concept balance and minimum-sufficient cross-references have been applied.
