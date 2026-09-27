@@ -21,7 +21,7 @@ Resolve a genuinely missing claim through a narrowly targeted check or flag it f
 
 Before choosing a path, inspect the current repository tree, TeachBooks configuration and table of contents. Determine the actual book-content directory, approved chapter number and established filename convention. Never guess the final path or number from lecture numbering, production folders or templates.
 
-Place the final Markdown chapter at the approved numbered path inside the actual TeachBooks content directory and add it to the relevant TeachBooks table of contents. Production artefacts remain outside that directory and outside the TOC.
+Place the final Markdown chapter at the approved numbered path inside the actual TeachBooks content directory. It may remain there while under review, but must remain absent from `book/_toc.yml` until Stage 8 has verified explicit manual editorial approval from Donato Giovannelli. Production artefacts remain outside that directory and outside the TOC.
 
 ## Reconstruction requirements
 
@@ -89,13 +89,13 @@ Do not treat successful reconstruction as scientific approval.
 
 ## Metadata
 
-New documents must begin with YAML front matter containing, where relevant: `chapter_title`, `chapter_slug`, `document_type`, `workflow_stage`, `workflow_version`, `document_version`, `editor`, `status`, `created`, `last_updated`, `publication_content` and `teachbooks_rendered`. Allowed status values are `draft`, `under review`, `revision required`, `editorially approved`, `superseded` and `published`. Publication chapters must set `publication_content: true` and `teachbooks_rendered: true`; production notes must set both values to `false`.
+New documents must begin with YAML front matter containing, where relevant: `chapter_title`, `chapter_slug`, `document_type`, `workflow_stage`, `workflow_version`, `document_version`, `editor`, `status`, `created`, `last_updated`, `publication_content` and `teachbooks_rendered`. Allowed status values are `draft`, `under review`, `revision required`, `editorially approved`, `superseded` and `published`. Chapter files prepared for publication must set `publication_content: true` but `teachbooks_rendered: false` until Stage 8 adds them to `book/_toc.yml` after approval; once rendered, publication chapters set both values to `true`. Production notes must set both values to `false`.
 
 ## Validation
 
 Before hand-off:
 
-- confirm that the publication chapter, and no production artefact, appears in the TeachBooks table of contents;
+- confirm that the chapter under review, and all production artefacts, remain absent from the TeachBooks table of contents;
 - validate Markdown, metadata, citations, internal links and figure paths;
 - run the available TeachBooks build and distinguish new errors from pre-existing warnings;
 - confirm that the Editorial Report reflects the reconstructed chapter and the unresolved Evidence Package items;

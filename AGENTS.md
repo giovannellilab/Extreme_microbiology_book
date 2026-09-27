@@ -10,7 +10,7 @@ When these instructions conflict with a task prompt, scientific accuracy and exp
 
 The authoritative chapter-production process is defined in [`workflows/`](workflows/README.md). Agents must follow the SOP for the requested stage and must not skip stages without explicit editorial approval. The relevant workflow file overrides generic workflow assumptions.
 
-Maintain the YAML metadata required by the SOPs. Keep production artefacts outside the rendered TeachBooks structure and separate from publication content; never add production artefacts to the TeachBooks table of contents.
+Maintain the YAML metadata required by the SOPs. Keep production artefacts outside the rendered TeachBooks structure and separate from publication content; never add production artefacts to the TeachBooks table of contents. A chapter file may exist in the book-content directory while under review, but it is rendered only when listed in `book/_toc.yml`. Only Stage 8 may add a chapter to that TOC, and only after explicit manual editorial approval from Donato Giovannelli.
 
 # 1. Core principles
 

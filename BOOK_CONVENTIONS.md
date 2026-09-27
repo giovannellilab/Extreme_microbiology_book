@@ -18,7 +18,7 @@ The repository distinguishes **production artefacts** from **publication content
 
 Production artefacts (source audits, evidence packages, reviews, figure plans, etc.) must never appear in the rendered TeachBooks book.
 
-Publication chapters live only inside the TeachBooks content directory.
+Chapter files intended for publication live inside the TeachBooks content directory and may remain there while under audit or review. A chapter is rendered and published only when it is listed in `book/_toc.yml`; its location in `book/` does not publish it. No chapter may be added to `book/_toc.yml` before explicit manual editorial approval from Donato Giovannelli, and only Stage 8 may make that TOC change.
 
 Typical structure:
 

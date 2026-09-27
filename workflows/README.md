@@ -6,7 +6,7 @@ This directory contains the version-controlled Standard Operating Procedures (SO
 
 Production artefacts document editorial decisions, evidence and review. They live in a working chapter directory such as `chapters/<chapter-slug>/` and must remain outside the rendered TeachBooks structure. Examples include `SOURCE_AUDIT.md`, `EVIDENCE_PACKAGE.md`, `SCIENTIFIC_REVIEW.md`, `EDITORIAL_REVIEW.md` and `FIGURE_PLAN.md`.
 
-Publication content is the final reader-facing chapter. It must live inside the repository's actual book-content directory and use the approved numbered path and established filename convention. Before creating it, inspect the current repository structure and TeachBooks configuration; never infer the path or chapter number from a draft, lecture or workflow file. Only publication content belongs in the TeachBooks table of contents.
+Publication content is the final reader-facing chapter. Its file must live inside the repository's actual book-content directory and use the approved numbered path and established filename convention. Before creating it, inspect the current repository structure and TeachBooks configuration; never infer the path or chapter number from a draft, lecture or workflow file. A chapter file may exist there during Stages 1–7, but it must remain absent from `book/_toc.yml`: its path does not make it rendered or published. Only Stage 8 may add a chapter to the TOC, after verifying explicit manual editorial approval from Donato Giovannelli.
 
 ## Stage sequence
 
