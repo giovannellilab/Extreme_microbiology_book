@@ -1,0 +1,50 @@
+# Authoritative contributor metadata for Microbiology of Extreme Environments.
+# Curated by the editor. Automated GitHub activity may suggest additions, but
+# must not determine authorship or contributor category without editorial review.
+
+project:
+  title: "Microbiology of Extreme Environments"
+  editor: "Donato Giovannelli"
+  licence: "CC BY-NC-SA 4.0"
+
+contributors:
+  - name: "Donato Giovannelli"
+    github: null
+    affiliation: "University of Naples Federico II"
+    category: "editor"
+    roles:
+      - "Editor"
+      - "Primary author"
+      - "Course creator"
+    chapters: []
+    boxes: []
+    notes: "Founding editor and primary author of the textbook."
+
+major_contributors: []
+minor_contributors: []
+scientific_reviewers: []
+figure_contributors: []
+methods_contributors: []
+technical_contributors: []
+copyeditors: []
+legacy_contributions: []
+
+automation:
+  enabled: false
+  generated_output: "CONTRIBUTORS.generated.md"
+  authoritative_source: "CONTRIBUTORS.yml"
+  suggested_pr_labels:
+    - "contribution:major"
+    - "contribution:minor"
+    - "contribution:scientific-review"
+    - "contribution:figure"
+    - "contribution:references"
+    - "contribution:technical"
+
+# Guidance:
+# - major_contributors: chapter authors, substantial scientific section authors,
+#   major scientific reviewers, or creators of original figures/data central to a chapter.
+# - minor_contributors: scientific corrections, useful references, terminology fixes,
+#   small textual or figure improvements, and technical contributions.
+# - legacy_contributions: contributions predating the GitHub workflow.
+# - automated GitHub data are evidence of activity, not an authorship decision.
