@@ -16,7 +16,7 @@ status: "under review"
 
 
 
-**# 19. Thermophiles and hyperthermophiles**
+**# Thermophiles and hyperthermophiles**
 
 
 

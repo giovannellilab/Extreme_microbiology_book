@@ -135,3 +135,7 @@ _build/
 
 # poetry files
 pyproject.toml
+
+# Quarto files
+/_site/
+/.quarto/
