@@ -7,6 +7,7 @@ book:
   author: "Donato Giovannelli"
   repo-url: https://github.com/giovannellilab/Extreme_microbiology_book
   repo-actions: [edit, issue]
+  downloads: [pdf, epub]
 
   chapters:
     - index.md
