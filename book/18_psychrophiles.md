@@ -3,7 +3,7 @@ chapter_title: "Life at low temperature: psychrophiles"
 chapter_slug: "17_psychrophiles"
 document_type: "publication_chapter"
 document_version: "1.2"
-editor: "Donato Giovannelli"
+book_editor: "Donato Giovannelli"
 status: "under review"
 ---
 

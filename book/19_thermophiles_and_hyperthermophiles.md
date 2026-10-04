@@ -8,7 +8,7 @@ document_type: "publication_chapter"
 
 document_version: "1.2"
 
-editor: "Donato Giovannelli"
+book_editor: "Donato Giovannelli"
 
 status: "under review"
 
