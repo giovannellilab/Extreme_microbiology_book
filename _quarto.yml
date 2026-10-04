@@ -23,13 +23,13 @@ csl: references/nature.csl
 format:
   html:
     toc: true
-    number-sections: false
+    number-sections: true
     theme: cosmo
 
   pdf:
     documentclass: book
     toc: true
-    number-sections: false
+    number-sections: true
 
   epub:
     toc: true

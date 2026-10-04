@@ -7,7 +7,7 @@ book_editor: "Donato Giovannelli"
 status: "under review"
 ---
 
-# 17. Life at low temperature: psychrophiles
+# Life at low temperature: psychrophiles
 
 Pure water freezes at 0 °C under ordinary atmospheric pressure, but that familiar number is not an absolute biological boundary. Natural water contains salts and other dissolved substances, occurs in small pores and films, and may be exposed to different pressures. These conditions can keep a fraction of it liquid below 0 °C. As cooling proceeds, however, the liquid fraction shrinks and its chemistry changes because growing ice leaves most solutes behind.
 
