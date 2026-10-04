@@ -26,8 +26,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install SVG converter
-        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+      - name: Install rendering dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+          quarto install tinytex --no-prompt
 
       - name: Render book
         run: quarto render
