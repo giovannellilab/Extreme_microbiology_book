@@ -1,0 +1,37 @@
+project:
+  type: book
+  output-dir: _site
+
+book:
+  title: "Microbiology of Extreme Environments"
+  author: "Donato Giovannelli"
+  repo-url: https://github.com/giovannellilab/Extreme_microbiology_book
+  repo-actions: [edit, issue]
+
+  chapters:
+    - book/intro.md
+    - book/18_psychrophiles.md
+    - book/19_thermophiles_and_hyperthermophiles.md
+    - book/references.md
+    - book/changelog.md
+    - book/credits.md
+
+bibliography: references/bibliography.bib
+csl: references/nature.csl
+
+format:
+  html:
+    toc: true
+    number-sections: false
+    theme: cosmo
+
+  pdf:
+    documentclass: book
+    toc: true
+    number-sections: false
+
+  epub:
+    toc: true
+
+execute:
+  enabled: false
