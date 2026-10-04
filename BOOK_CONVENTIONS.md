@@ -38,7 +38,7 @@ Temporary build output may live in:
 
 Anything under `build/` is disposable and is not a canonical publication artefact.
 
-ach chapter-production directory must use the same canonical numbered slug as the publication chapter:
+Each chapter-production directory must use the same canonical numbered slug as the publication chapter:
 
 `chapters/NN_chapter_slug/`
 

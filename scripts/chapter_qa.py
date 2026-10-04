@@ -170,18 +170,14 @@ def check_identity(
 
     chapter_slug = metadata.get("chapter_slug")
 
-    if isinstance(chapter_slug, str):
-        normalised_slug = re.sub(
-            r"[^a-z0-9]+",
-            "_",
-            chapter_slug.lower(),
-        ).strip("_")
-
-        if normalised_slug != filename_slug:
-            qa.error(
-                f"{path.name}: filename slug '{filename_slug}' "
-                f"does not match chapter_slug '{normalised_slug}'"
-            )
+    if (
+        isinstance(chapter_slug, str)
+        and chapter_slug.strip() != path.stem
+    ):
+        qa.error(
+            f"{path.name}: chapter_slug '{chapter_slug}' "
+            f"must exactly match filename stem '{path.stem}'"
+        )
 
 
 def bibliography_keys(path: Path, qa: QA) -> set[str]:

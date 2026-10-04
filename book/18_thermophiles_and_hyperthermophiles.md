@@ -1,16 +1,10 @@
 ---
 chapter_title: "Thermophiles and hyperthermophiles"
-chapter_slug: "thermophiles"
+chapter_slug: "18_thermophiles_and_hyperthermophiles"
 document_type: "publication_chapter"
-workflow_stage: 7
-workflow_version: "1.0"
 document_version: "1.2"
 editor: "Donato Giovannelli"
 status: "under review"
-created: "2026-09-28"
-last_updated: "2026-10-04"
-publication_content: true
-teachbooks_rendered: false
 ---
 
 # 18. Thermophiles and hyperthermophiles
