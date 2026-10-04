@@ -1,235 +1,229 @@
-# Extreme Environment Chapter Template
+# TEMPLATE_ENVIRONMENT.md
 
-> Use this template for chapters centred on a specific environment or environmental system.
->
-> Part IV is intentionally extensible. A chapter should exist because there is strong material and expertise available, not because the book must cover every possible environment.
->
-> Follow `STYLE_GUIDE.md` and `AGENTS.md`.
->
-> Central logic:
->
-> **geological/physical process → environmental chemistry → energetic opportunities and constraints → metabolisms → community structure → biogeochemical consequences**
+# Extreme environment chapter template
 
-# [Environment name]
+Use this template for chapters centred on a specific environment or environmental system.
 
-## Why this environment matters
+Follow:
 
-Introduce the environment through the scientific problem or contradiction that makes it interesting.
+- `STYLE_GUIDE.md`
+- `BOOK_CONVENTIONS.md`
+- `FIGURE_STYLE.md`
+- `CHAPTER_PRODUCTION_PROMPT.md`
+
+Central logic:
+
+geological/physical process
+→ environmental chemistry
+→ energetic opportunities and constraints
+→ microbial metabolisms
+→ community structure
+→ biogeochemical consequences
+
+This template is a guide, not a checklist.
+
+Merge, rename or omit sections when that improves the chapter.
+
+# [NN. Chapter title]
+
+## 1. Why this environment matters
+
+Introduce the environment through the scientific problem, contradiction or observation that makes it important.
 
 Explain why it belongs in a book on extreme microbiology.
 
+Define the environment clearly enough that the reader understands what is included and what is not.
+
 Avoid generic openings.
 
-## Definition and boundaries
+## 2. How the environment forms
 
-Define what is included in the term and what is not.
+Explain the geological, physical or hydrological processes that create and maintain the environment.
 
-Where relevant, distinguish related environments or subtypes.
+Relevant processes may include:
 
-Explain whether the boundaries are geological, physical, chemical, operational or ecological.
+- tectonics
+- hydrothermal circulation
+- sedimentation
+- evaporation
+- freezing
+- weathering
+- water-rock interaction
+- fluid flow
+- biological feedbacks
 
-## Formation and functioning
+The goal is causal understanding, not geological description for its own sake.
 
-Explain how the environment forms and how it is maintained.
+## 3. Physical and chemical structure
 
-Depending on the system, this may include:
-- geological processes;
-- hydrology;
-- hydrothermal circulation;
-- sedimentation;
-- evaporation;
-- freezing;
-- tectonics;
-- weathering;
-- water-rock interaction;
-- biological feedbacks.
+Explain the variables that actually structure microbial life.
 
-The goal is to make the environmental conditions causally understandable.
+These may include:
 
-## Physicochemical characteristics
+- temperature
+- pressure
+- pH
+- salinity
+- water activity
+- oxygen
+- redox state
+- light
+- nutrient availability
+- organic carbon
+- electron donors and acceptors
+- metals
+- fluid flow
+- spatial gradients
 
-Describe the variables that actually structure microbial life.
+Do not simply list environmental extremes.
 
-Possible variables include:
-- temperature;
-- pressure;
-- pH;
-- salinity;
-- water activity;
-- oxygen;
-- redox state;
-- light;
-- nutrient availability;
-- organic carbon;
-- electron donors;
-- electron acceptors;
-- metals;
-- fluid flow;
-- spatial gradients.
+Explain how the variables interact and why they matter biologically.
 
-Avoid presenting a list of extreme values without explaining their biological significance.
-
-## Energetic landscape
+## 4. Energetic landscape and metabolisms
 
 Explain which chemical disequilibria are available to microbial life.
 
 Ask:
+
 - What are the major electron donors?
 - What are the major electron acceptors?
 - Where do they meet?
-- How do concentrations and transport affect energetic yield?
+- How does transport affect availability?
 - Which metabolisms are favoured or constrained?
 
-Cross-reference the thermodynamics and metabolism chapters where appropriate.
+Connect environmental chemistry to microbial metabolism.
 
-Use a conceptual figure when gradients or interfaces are central.
+Cross-reference foundational metabolism and thermodynamics chapters rather than re-teaching them in full.
 
-## Microbial ecology and dominant metabolisms
+Use figures when interfaces or gradients are central.
 
-Explain how the physicochemical and energetic structure translates into microbial ecology.
+## 5. Microbial ecology
 
-Organise primarily around function and ecological niches.
+Explain how physical structure, chemistry and energy availability shape microbial communities.
 
-Possible topics include:
-- primary production;
-- heterotrophy;
-- respiration;
-- fermentation;
-- syntrophy;
-- carbon fixation;
-- methane cycling;
-- sulphur cycling;
-- nitrogen cycling;
-- iron cycling;
-- trace-gas metabolism.
+Organise primarily around ecological function and niches rather than taxonomy.
 
-Do not begin with long taxonomic lists.
+Relevant processes may include:
 
-## Community structure and representative organisms
+- primary production
+- heterotrophy
+- respiration
+- fermentation
+- syntrophy
+- carbon fixation
+- methane cycling
+- sulphur cycling
+- nitrogen cycling
+- iron cycling
+- trace-gas metabolism
 
-Introduce representative taxa only after the functional structure is clear.
+Introduce representative organisms only where they clarify a process, adaptation, discovery or niche.
 
-Select organisms because they illustrate a key metabolism, adaptation, landmark discovery or characteristic ecological niche.
+Avoid taxonomic catalogues.
 
-## Spatial and temporal organisation
+## 6. Spatial and temporal organisation
 
-Where relevant, explain gradients, zonation, interfaces, succession, episodic disturbance, seasonal change, fluid mixing and transport limitation.
+Where relevant, explain:
 
-Environmental heterogeneity is often more informative than a single mean condition.
+- gradients
+- zonation
+- interfaces
+- mixing
+- transport limitation
+- succession
+- episodic disturbance
+- seasonal change
 
-## Links to broader biogeochemical cycles
+Environmental heterogeneity is often more informative than a single average condition.
 
-Explain how microbial activity in this environment affects larger-scale elemental cycles or Earth-system processes.
+This section may be merged with the previous sections when spatial structure is already central to the explanation.
 
-Include only cycles that matter for the environment.
+## 7. Biogeochemical and Earth-system significance
 
-## Distribution on Earth
+Explain what microbial activity in this environment changes beyond the immediate habitat.
 
-Explain where the environment occurs and what controls its global or regional distribution.
+Use concrete processes where possible:
 
-Maps are useful when spatial distribution matters conceptually.
+- fluxes
+- transformations
+- reservoirs
+- elemental cycling
+- climate-relevant processes
+- geological feedbacks
 
-Avoid cataloguing every known site.
+Include only the larger-scale consequences that genuinely matter for the environment.
 
-## Discovery and exploration
+## 8. Research frontiers
 
-Optional.
+Identify a small number of important unresolved questions.
 
-Include historical material only when it helps explain how understanding of the environment changed.
+Examples may include:
 
-Possible themes:
-- discovery of an unexpected ecosystem;
-- technological advances that made exploration possible;
-- changes in assumptions about life's limits.
+- which organisms are actually active
+- what limits primary productivity
+- which metabolisms dominate in situ
+- how transport competes with thermodynamic potential
+- how representative sampled sites are
+- how much of the system remains inaccessible
 
-## How do we study this environment?
+Where methods or sampling limitations are essential to understanding these uncertainties, explain them here or where the relevant evidence is discussed.
 
-Explain the observational and experimental limitations that shape current knowledge.
+## Optional material
 
-Possible methods include:
-- sampling technology;
-- drilling;
-- submersibles;
-- remote sensing;
-- geochemistry;
-- microscopy;
-- cultivation;
-- isotopes;
-- sequencing;
-- metagenomics;
-- in situ sensors;
-- modelling.
+Include the following only when they materially improve the chapter:
 
-This section is especially important when accessibility or sampling bias strongly affects interpretation.
+### Representative site or case study
 
-## Representative site or case study
+Use one well-chosen site when it makes the general principles concrete.
 
-Optional but encouraged when one location provides a powerful example of the chapter's central principles.
+Do not let the case study replace the environmental framework.
 
-Examples may include Lost City, Yellowstone, Antarctic subglacial systems, a deep hypersaline basin, a cave system or a serpentinising aquifer.
+### Discovery and exploration
 
-Do not let the case study replace the general environmental framework.
+Include historical material only when it helps explain how scientific understanding changed.
 
-## Astrobiological relevance
+### Methods
 
-Optional.
+Discuss methods when sampling access, bias or measurement strongly affects interpretation.
+
+Do not add a standalone methods section by default.
+
+### Astrobiology
 
 Include only when there is a genuine mechanistic connection.
 
-Clearly distinguish Earth observation, analogue reasoning, planetary environmental constraints and speculation.
+Distinguish clearly between Earth observations, analogue reasoning, planetary constraints and speculation.
 
-Do not imply that an Earth analogue demonstrates extraterrestrial habitability or life.
+### Human relevance and applications
 
-## Human relevance and applications
+Include only when the connection follows directly from the environmental microbiology.
 
-Optional.
+Avoid application catalogues.
 
-Possible topics include biotechnology, resource extraction, carbon cycling, climate feedbacks, contamination, underground storage, conservation and planetary exploration.
-
-Explain the biological mechanism connecting the environment to the application.
-
-## Open questions and current research
-
-Identify the main unresolved problems.
-
-Good questions are specific.
-
-Examples:
-- Which organisms are actually active rather than merely detected?
-- What limits primary productivity?
-- How deep does active life extend?
-- Which metabolisms dominate under in situ conditions?
-- How important is transport relative to thermodynamic potential?
-- How representative are the accessible sampling sites?
-
-## Key concepts to retain
+## Key concepts
 
 The reader should be able to reconstruct:
 
-```text
 how the environment forms
-        ↓
-what physical and chemical conditions result
-        ↓
-what energy sources become available
-        ↓
-which microbial metabolisms are favoured
-        ↓
-how communities are structured
-        ↓
-what consequences follow
-```
+→ what physical and chemical conditions result
+→ what energetic opportunities and constraints emerge
+→ which microbial metabolisms are favoured
+→ how communities are organised
+→ what larger consequences follow
 
 ## Further reading
 
-Provide approximately 5–10 carefully curated entry points into the literature.
+Provide a short curated set of useful entry points into the literature.
 
-For environment chapters, include where possible:
-- one broad environmental review;
-- key geochemical/geological background;
-- landmark microbiology studies;
-- recent synthesis or frontier work.
+Normally about 5–10 sources is sufficient.
+
+Where appropriate, include:
+
+- broad environmental synthesis
+- geological/geochemical background
+- landmark microbiology
+- recent frontier work
 
 ## References
 
-References cited in the text are managed through the project bibliography.
+References cited in the text are managed through the central project bibliography.

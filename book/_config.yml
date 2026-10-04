@@ -1,5 +1,15 @@
-Title: Microbiology of Extreme Environments
-author: Giovannelli Lab, built with <a href="https://teachbooks.io">TeachBooks</a> and <a href="https://jupyterbook.org/">Jupyter Book</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a> #add your own name here
+title: Microbiology of Extreme Environments
+
+author: >
+  Giovannelli Lab, built with
+  <a href="https://teachbooks.io">TeachBooks</a> and
+  <a href="https://jupyterbook.org/">Jupyter Book</a>,
+  licensed under
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+     target="_blank"
+     rel="license noopener noreferrer">
+    CC BY-NC-SA 4.0
+  </a>
 
 execute:
   execute_notebooks: "off"
@@ -7,38 +17,49 @@ execute:
 only_build_toc_files: true
 
 html:
-  favicon : "figures/xxxx.ico"
-  baseurl :  "https://giovannellilab.github.io/" #Replace this with your own URL
+  baseurl: "https://giovannellilab.github.io/Extreme_microbiology_book/"
 
 sphinx:
   config:
     html_css_files:
-    - print.css
+      - print.css
+
     html_js_files:
-    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+
     thebe_config:
       use_thebe_lite: true
-      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
+      exclude_patterns:
+        - "**/_*.yml"
+        - "**/*.md"
+        - "**/*.ipynb"
+
     html_theme_options:
       logo:
         text: Microbiology of Extreme Environments
-        image_light: Cover_MEE_book.svg 
-        image_dark: Cover_MEE_book.svg 
-      repository_url: "https://github.com/giovannellilab/Extreme_microbiology_book/" #add your own repo URL here
+        image_light: Cover_MEE_book.svg
+        image_dark: Cover_MEE_book.svg
+
+      repository_url: "https://github.com/giovannellilab/Extreme_microbiology_book/"
       path_to_docs: "book"
       repository_branch: "main"
       use_edit_page_button: true
       use_repository_button: true
-      use_issues_button : true
+      use_issues_button: true
+
       launch_buttons:
         thebe: true
+
     html_show_copyright: false
-    html_last_updated_fmt: '%B %-d, %Y'
-    html_static_path: ["figures", "_static"] # add folders that contain files that need to be included, such as the location of the logo(s)
+    html_last_updated_fmt: "%B %-d, %Y"
+    html_static_path:
+      - figures
+      - _static
+
     mathjax3_config:
-      chtml: {
-        mtextInheritFont: true # To typeset text within math prettier
-      }
+      chtml:
+        mtextInheritFont: true
+
   extra_extensions:
     - sphinx.ext.imgconverter
     - jupyterbook_patches
@@ -48,7 +69,7 @@ sphinx:
     - sphinx_exercise
     - teachbooks_sphinx_tippy
 
-bibtex_bibfiles: 
+bibtex_bibfiles:
   - ../references/bibliography.bib
 
 csl: ../references/nature.csl

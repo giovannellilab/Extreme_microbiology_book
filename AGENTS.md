@@ -1,531 +1,152 @@
-# AGENTS.md — Instructions for AI Agents
+# AGENTS.md — Instructions for AI agents
 
-This repository contains *Microbiology of Extreme Environments*, an open, evolving academic textbook edited by Donato Giovannelli.
+This repository contains *Microbiology of Extreme Environments*, an open academic textbook edited by Donato Giovannelli.
 
-AI agents working in this repository must follow the rules in this file and in [`STYLE_GUIDE.md`](STYLE_GUIDE.md).
+Agents must follow:
 
-When these instructions conflict with a task prompt, scientific accuracy and explicit instructions from the editor take precedence.
+- `BOOK_CONVENTIONS.md`
+- `STYLE_GUIDE.md`
+- `FIGURE_STYLE.md`
+- `CHAPTER_PRODUCTION_PROMPT.md`
 
-# Chapter-production workflow
+Do not duplicate or reinterpret those rules here.
 
-The authoritative chapter-production process is defined in [`workflows/`](workflows/README.md). Agents must follow the SOP for the requested stage and must not skip stages without explicit editorial approval. The relevant workflow file overrides generic workflow assumptions.
+# Core behaviour
 
-Maintain the YAML metadata required by the SOPs. Keep production artefacts outside the rendered TeachBooks structure and separate from publication content; never add production artefacts to the TeachBooks table of contents. A chapter file may exist in the book-content directory while under review, but it is rendered only when listed in `book/_toc.yml`. Only Stage 8 may add a chapter to that TOC, and only after explicit manual editorial approval from Donato Giovannelli.
+Work conservatively and keep the production system simple.
 
-# 1. Core principles
+Do not create new workflow layers, directories, metadata fields, agent roles or supporting files unless they solve a clear and demonstrated need.
 
-The book is intended for advanced undergraduate, MSc and early PhD students from interdisciplinary scientific backgrounds, including biology, chemistry, geology, Earth sciences, environmental sciences and astrobiology.
+Prefer the smallest change that correctly completes the requested task.
 
-Readers should not be assumed to have extensive previous training in microbiology.
+Scientific accuracy and explicit instructions from the editor take precedence over automation convenience.
 
-The book should be scientifically rigorous but accessible.
-
-It is intentionally **not encyclopaedic**.
-
-Do not add material merely because it could be included.
-
-## Chapter rhythm
-
-The template is a guide rather than a checklist.
-
-Do not create sections simply because they exist in the template.
-
-A strong extremophile chapter typically contains 5–7 substantive sections.
-
-Optional template elements should be merged whenever doing so improves narrative flow.
-
-## Representative systems
-
-Representative organisms are teaching tools.
-
-Introduce them only where they illuminate a mechanism.
-
-Avoid standalone organism catalogues.
-
-## Methods
-
-Methods belong only where they help interpret evidence.
-
-Do not create a standalone methods section unless explicitly requested by the editor.
-
-## Applications
-
-Applications are supporting material.
-
-Their purpose is to demonstrate why a biological mechanism matters.
-
-Avoid catalogues of industrial, medical or commercial applications.
-
-Refer readers to the dedicated biotechnology and applications chapter, `Extremophiles' contributions to society`, for detailed discussion.
-
-Version 1.0 should contain the strongest coherent material currently available. Additional topics and environments can be added in later versions when appropriate expertise and evidence are available.
-
-# 2. Required reading before substantial work
-
-Before modifying scientific content, read:
-
-1. `STYLE_GUIDE.md`
-2. the relevant chapter template;
-3. the complete target chapter;
-4. any source notes, lecture transcripts or source-material files explicitly associated with the chapter;
-5. relevant neighbouring chapters when the requested change may cause duplication or terminology conflicts.
-
-Do not modify a chapter solely from a short excerpt when the complete chapter is available.
-
-# 3. Scientific priority
-
-Use the following priority order:
-
-1. scientific accuracy;
-2. correct representation of evidence and uncertainty;
-3. conceptual clarity;
-4. pedagogical usefulness;
-5. consistency with the intellectual structure of the book;
-6. conciseness;
-7. stylistic consistency.
-
-Never preserve wording when doing so would preserve an error.
-
-Never improve style at the expense of scientific precision.
-
-# 4. Source material is not publication-ready prose
-
-Lecture slides, recordings, transcripts, notes and existing drafts are source material.
-
-They may contain:
-
-* transcription errors;
-* informal shorthand;
-* repetition;
-* outdated information;
-* teaching simplifications;
-* partially developed arguments;
-* AI-generated expansions;
-* unverified citations.
-
-Do not mechanically polish this material.
-
-Instead:
-
-1. identify the scientific argument;
-2. identify useful examples and analogies;
-3. reconstruct the conceptual sequence;
-4. verify claims when requested or when they appear doubtful;
-5. rewrite the material into coherent textbook prose.
-
-Preserve the **reasoning, examples, conceptual sequence and pedagogical intent** of the source.
-
-During chapter reconstruction, preserve memorable explanations, intuitive causal reasoning, elegant transitions and scientifically sound analogies. Integrate approximately five to ten concise teaching anchors that clarify difficult ideas or connect mechanisms, without turning them into slogans.
-
-Do not preserve weak wording merely because it exists.
-
-Do not replace distinctive teaching logic with generic textbook prose.
-
-# 5. Never fabricate scientific information
+# Scientific work
 
 Never invent:
 
-* references;
-* DOIs;
-* quantitative values;
-* gene or protein functions;
-* organismal properties;
-* metabolic pathways;
-* taxonomic assignments;
-* experimental results;
-* environmental measurements.
+- references
+- DOIs
+- quantitative values
+- experimental results
+- organismal properties
+- gene or protein functions
+- metabolic pathways
+- taxonomic assignments
 
-When a claim cannot be verified, mark it explicitly for review.
+If something cannot be verified, flag it rather than guessing.
 
-Use comments such as:
+Distinguish clearly among:
 
-```text
-TODO: verify reference
-TODO: verify temperature limit
-TODO: scientific review required
-```
+- established knowledge
+- interpretation
+- hypothesis
+- speculation
 
-rather than inventing a plausible answer.
+Do not confuse detection, survival, viability, activity, growth and reproduction.
 
-# 6. References
+# Source material
 
-AI-generated references must never be accepted without verification.
+Lecture slides, notes, transcripts, existing drafts and curated sources are intellectual source material.
 
-When adding or checking references:
+Preserve their:
 
-* prefer primary literature for specific discoveries and experimental claims;
-* use authoritative reviews for broad synthesis;
-* verify title, authors, year, journal and DOI;
-* use the central BibTeX bibliography where available;
-* do not duplicate bibliography records unnecessarily;
-* do not cite secondary websites when appropriate scientific literature exists.
+- reasoning
+- examples
+- conceptual sequence
+- teaching logic
+- distinctive scientific angle
 
-If browsing or literature verification is outside the scope of the task, flag unsupported claims instead of inventing citations.
+Do not mechanically polish source text.
 
-# 7. Scientific uncertainty
+Do not replace distinctive source material with generic textbook prose.
 
-Distinguish clearly between:
+The curated chapter source list is the intended starting point for chapter production. External literature searching should fill real gaps, not replace that selection with a generic survey.
 
-* established knowledge;
-* interpretation;
-* hypothesis;
-* speculation.
-
-Do not convert tentative evidence into certainty.
-
-Be especially conservative when discussing:
-
-* limits of life;
-* uncultivated organisms;
-* deep biosphere activity;
-* origin-of-life scenarios;
-* astrobiology;
-* environmental processes inferred only from genomic data.
-
-Detection, viability, metabolic activity, growth and reproduction must never be treated as equivalent.
-
-# 8. Causal explanation
-
-Prefer causal explanation over descriptive lists.
-
-For extremophile chapters, use the conceptual logic:
-
-```text
-environmental condition
-        ↓
-physicochemical consequence
-        ↓
-cellular challenge
-        ↓
-adaptation
-        ↓
-ecological/evolutionary consequence
-```
-
-For environment chapters:
-
-```text
-geological/physical process
-        ↓
-environmental chemistry
-        ↓
-energetic opportunities and constraints
-        ↓
-microbial metabolisms
-        ↓
-community structure
-        ↓
-biogeochemical consequences
-```
-
-For metabolism chapters:
-
-```text
-substrates + environmental conditions
-        ↓
-chemical reaction
-        ↓
-thermodynamic and kinetic constraints
-        ↓
-molecular machinery
-        ↓
-energy conservation / biomass production
-        ↓
-environmental consequence
-```
-
-# 9. Avoid unnecessary comprehensiveness
-
-Do not create exhaustive:
-
-* taxonomic lists;
-* gene catalogues;
-* metabolic inventories;
-* literature reviews;
-* adaptation lists.
-
-Select representative examples that explain general principles. Every organism included must perform an explanatory role; do not include an organism solely because it is well known.
-
-When useful material would interrupt the chapter narrative, propose a:
-
-* concept box;
-* case study;
-* methods box;
-* frontier box;
-* application box;
-* table.
-
-# 10. Cross-chapter consistency
-
-Do not re-teach foundational concepts unnecessarily.
-
-Important concepts should have a primary home and later chapters should cross-reference them.
-
-Examples include:
-
-* membrane architecture;
-* chemiosmosis;
-* Gibbs free energy;
-* thermodynamics versus kinetics;
-* electron donors and acceptors;
-* carbon fixation;
-* water activity;
-* osmotic stress;
-* cardinal growth parameters;
-* protein stability;
-* sequencing terminology.
-
-Before adding a long foundational explanation to an advanced chapter, search the repository for an existing treatment.
-
-# 11. Terminology and nomenclature
+# Writing and editing
 
 Follow `STYLE_GUIDE.md`.
 
 In particular:
 
-* genus and species names are italicised: *Escherichia coli*;
-* bacterial and archaeal gene symbols are lowercase italics: *prtC*;
-* proteins are roman type with conventional capitalisation: PrtC;
-* strains are not italicised;
-* chemical formulae use correct subscripts and superscripts;
-* SI units are used where appropriate;
-* British English is used throughout.
+- use British English
+- explain mechanisms causally
+- write for interdisciplinary scientific readers
+- prefer representative examples over catalogues
+- avoid generic AI prose
+- avoid encyclopaedic expansion
+- avoid repetitive summaries and filler
+- preserve useful analogies when scientifically accurate
+- keep cross-references locally understandable
 
-Do not silently change established gene, protein or taxonomic nomenclature merely to impose a generic pattern.
+When editing existing prose, preserve strong wording and teaching logic unless there is a reason to change them.
 
-# 12. Style
+Do not rewrite material merely to make it sound different.
 
-Write in clear British English.
+# Chapter production
 
-The prose should sound like an expert scientist explaining a difficult subject clearly to an interdisciplinary reader.
+Follow `CHAPTER_PRODUCTION_PROMPT.md`.
 
-Avoid:
+There are two human gates:
 
-* generic AI prose;
-* excessive headings;
-* excessive bullet lists;
-* repetitive summaries;
-* rhetorical filler;
-* unsupported superlatives;
-* unnecessary adjectives;
-* formulaic introductions and conclusions.
+- Gate 1 — chapter architecture
+- Gate 2 — complete chapter review
 
-Avoid phrases such as:
+Do not introduce additional human approval stages.
 
-> It is important to note that...
+After Gate 1 approval, complete the automated production sequence unless a genuine scientific problem would require changing the approved architecture.
 
-> Interestingly...
+A chapter is not Gate-2-ready until the canonical review PDF exists at:
 
-> In today's rapidly evolving field...
+`book/NN_chapter_slug.pdf`
 
-unless they genuinely carry meaning.
+# Figures
 
-Do not use a review-article style unless explicitly requested.
+Follow `FIGURE_STYLE.md`.
 
-# 13. Analogies
+Figures must serve a scientific or pedagogical purpose.
 
-Preserve strong teaching analogies when they help understanding.
+Do not create decorative figures.
 
-Examples from the source material include:
+Do not treat generated candidates as completed figures.
 
-* membranes as biological batteries;
-* electron bifurcation as a pulley;
-* life as an electrical/redox system.
+Only final selected assets should be referenced by publication chapters.
 
-An analogy must always be accompanied by the precise scientific mechanism.
+# Repository changes
 
-Do not extend analogies beyond where they remain scientifically useful.
+Keep production artefacts outside the rendered book.
 
-# 14. Figures
+Do not modify:
 
-Agents may:
+- the public TOC
+- publication status
+- licensing
+- overall book architecture
 
-* propose figures;
-* write detailed figure specifications;
-* create editable conceptual diagrams when requested;
-* identify where a figure would improve comprehension.
+unless explicitly instructed.
 
-Prefer original conceptual figures over copied published figures.
+Do not add a new chapter without explicit editorial approval.
 
-Do not import copyrighted figures without explicit permission or an appropriate licence.
+Do not commit, push, merge or publish unless the current task explicitly authorises it.
 
-Every proposed figure should have a clear pedagogical purpose.
+When asked to make a focused change, do not include unrelated cleanup.
 
-# 15. Chapter boundaries
+# Validation
 
-Do not create a new chapter simply because sufficient material exists.
+Use the repository QA script for mechanical chapter checks:
 
-New chapters require an explicit editorial decision.
+`python3 scripts/chapter_qa.py book/NN_chapter_slug.md`
 
-This is particularly important for Part IV, which is intentionally extensible.
+For Gate 2:
 
-A new extreme-environment chapter should normally be added only when:
+`python3 scripts/chapter_qa.py book/NN_chapter_slug.md --gate2`
 
-* the topic materially improves the book;
-* sufficient high-quality material exists;
-* appropriate expertise is available;
-* the chapter has a clear conceptual contribution distinct from existing chapters.
+Rendering, visual inspection and PDF generation belong to the production workflow, not to the QA script.
 
-# 16. Editing existing contributions
+# Definition of done
 
-Respect intellectual contributions already present in the manuscript.
+A task is complete when the requested work is actually finished, not when additional process has been created around it.
 
-Substantial rewriting is allowed when necessary for coherence, accuracy or style, but agents should preserve:
+Before reporting completion, verify only what is relevant to the task.
 
-* original scientific insights;
-* useful examples;
-* distinctive explanations;
-* attribution;
-* contributor credit.
-
-Do not erase contributor attribution merely because prose has been substantially edited.
-
-# 17. Git workflow
-
-Unless explicitly instructed otherwise:
-
-* do not commit directly to `main`;
-* work on a dedicated branch;
-* make focused commits;
-* avoid mixing unrelated changes;
-* open a pull request;
-* explain substantive scientific or structural changes in the PR description.
-
-A substantive chapter rewrite should normally be reviewable independently from infrastructure or formatting changes.
-
-# 18. Pull-request descriptions
-
-For substantive work, describe:
-
-* what changed;
-* why it changed;
-* what source material was used;
-* any scientific claims requiring verification;
-* references added or removed;
-* figures affected;
-* cross-chapter implications;
-* unresolved questions.
-
-Do not describe a major conceptual rewrite merely as “cleaned up chapter”.
-
-# 19. Do not self-merge substantive scientific changes
-
-Agents may prepare branches and pull requests.
-
-Substantive scientific changes require human review before integration into the default branch.
-
-Agents must not autonomously merge:
-
-* new scientific claims;
-* chapter restructures;
-* major reference changes;
-* new chapters;
-* changes affecting interpretation of evidence.
-
-Mechanical changes may be automated separately if explicitly authorised.
-
-# 20. Appropriate agent tasks
-
-Agents are particularly suitable for:
-
-## Source audit
-
-Map lecture material, notes and drafts onto a chapter structure.
-
-Output:
-
-* concepts present;
-* useful examples;
-* duplicated material;
-* unsupported claims;
-* missing concepts;
-* candidate figures;
-* candidate references requiring verification.
-
-## Chapter reconstruction
-
-Reconstruct an approximately 90% publication-ready chapter from the approved architecture, source audit, evidence package, style guide and chapter template. This is not a new literature review. Preserve the source's strongest scientifically correct teaching logic, use figures instead of unnecessary explanatory expansion, and alternate explanation, evidence and synthesis. Produce both the publication chapter and a concise, non-rendered `EDITORIAL_REPORT.md` for the editor.
-
-## Reference audit
-
-Identify:
-
-* unsupported claims;
-* missing references;
-* duplicate references;
-* questionable references;
-* references requiring DOI verification.
-
-Do not fabricate replacements.
-
-## Accessibility review
-
-Read the chapter from the perspective of a scientifically literate reader with limited microbiology training.
-
-Identify concepts that are used before being explained.
-
-## Cross-chapter review
-
-Identify:
-
-* duplicated explanations;
-* conflicting definitions;
-* inconsistent nomenclature;
-* concepts introduced in the wrong order.
-
-## Figure planning
-
-Produce figure specifications including:
-
-* question addressed;
-* visual structure;
-* labels;
-* data requirements;
-* caption concept;
-* source/licensing considerations.
-
-## Technical validation
-
-Check:
-
-* Markdown structure;
-* links;
-* citations;
-* references;
-* figure paths;
-* TeachBooks/Jupyter Book build;
-* spelling and nomenclature.
-
-# 21. Tasks requiring particular caution
-
-Do not autonomously:
-
-* determine authorship or contributor status;
-* classify scientific contributions as major or minor;
-* resolve disputed scientific interpretations;
-* remove contributors;
-* change licensing terms;
-* change the overall book architecture;
-* add new chapters to the official table of contents;
-* substantially alter the pedagogical philosophy.
-
-These decisions belong to the editor.
-
-# 22. Definition of done
-
-A chapter is not complete merely because its prose reads well.
-
-Before declaring work complete, check:
-
-* scientific claims are supported or flagged;
-* uncertainty is represented correctly;
-* terminology follows the style guide;
-* causal reasoning is clear;
-* avoidable duplication has been removed;
-* source material has been represented faithfully;
-* references are verified or explicitly marked for checking;
-* figures and tables serve a pedagogical purpose;
-* Markdown builds correctly;
-* unresolved issues are documented.
-
-When uncertain, flag the issue for human review rather than silently making a high-impact assumption.
+Do not claim that scientific, visual, build or publication checks passed unless they were actually performed.

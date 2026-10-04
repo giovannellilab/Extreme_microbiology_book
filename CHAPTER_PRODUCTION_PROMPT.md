@@ -1,310 +1,318 @@
-# Canonical chapter-production supervisor prompt
+# CHAPTER_PRODUCTION_PROMPT.md
 
-Use this prompt to supervise production of one chapter in *Microbiology of Extreme Environments*. Replace the bracketed chapter details before starting.
+## Purpose
 
-```text
+This is the canonical supervisor prompt for producing one chapter of *Microbiology of Extreme Environments*.
+
+It defines the two human gates and the order of work between them.
+
+Scientific writing, repository structure, figure style and detailed conventions are defined elsewhere:
+
+- `STYLE_GUIDE.md`
+- `BOOK_CONVENTIONS.md`
+- `FIGURE_STYLE.md`
+- `AGENTS.md`
+
+Do not duplicate or reinterpret those rules here.
+
+Use the existing `workflows/` material only as supporting SOPs where useful. The workflow described in this file is authoritative for chapter production.
+
+## Start a chapter
+
+Provide:
+
 Chapter number and title: [NN — Title]
 Chapter slug: [slug]
-Chapter type/template: [extremophile / environment / general / other]
-Curated source location: [path or connected source folder]
-Editor: Donato Giovannelli
-```
+Chapter type: [foundational / metabolism / extremophile / environment / synthesis / other]
+Curated source location: [chapter source folder or source-map path]
 
-This is the canonical two-human-gate production contract. Follow `AGENTS.md`, `STYLE_GUIDE.md`, `BOOK_CONVENTIONS.md`, `FIGURE_STYLE.md`, the relevant chapter template and the stage SOPs in `workflows/`. For a chapter explicitly started with this prompt, approval at Human Gate 1 authorises the supervisor to run the existing evidence, reconstruction, review, revision, editorial, figure and validation stages without further human interruption. Stage-level decisions and artefacts remain auditable, but they are not additional human gates. Stop only for Human Gate 2 or for a genuine scientific conflict that would materially change the approved architecture.
+Then begin with Human Gate 1.
 
-Do not modify `book/_toc.yml`, mark a chapter published, commit, push or publish unless Donato Giovannelli has approved Human Gate 2 and explicitly instructed the relevant action. Preserve production artefacts outside the rendered book structure.
+Do not modify the public TOC, publish, commit or push unless explicitly instructed.
 
-## Operating principles
+# Sources
 
-- The supervisor owns scope, sequence, status and integration. Do not proliferate roles or create an elaborate agent hierarchy.
-- Preserve the repository architecture and use existing stage artefacts where they remain valid.
-- Treat the approved architecture as a contract. A later discovery may refine wording or evidence, but only an architecture-changing scientific conflict returns to the user before Gate 2.
-- Prefer deterministic checks and explicit evidence boundaries over claims of completeness.
-- Update the chapter's row in `CHAPTER_STATUS.md` when a stage materially changes state.
-- Do not invent claims, references, quantitative values, organismal properties or completion states.
+Use chapter sources in this order:
 
-## Source precedence
+1. author-provided chapter material, lectures, notes and existing drafts;
+2. the author-curated chapter source list;
+3. the central bibliography;
+4. targeted external literature search when needed.
 
-Use sources in this order:
+The curated source list is the intended intellectual starting point for the chapter.
 
-1. Existing chapter-folder material and the lecture, notes, transcript, draft or other source files explicitly associated with the chapter.
-2. The chapter's `RECOMMENDED_SOURCES`.
-3. The existing book bibliography in `references/bibliography.bib`.
-4. Targeted external literature search only when needed to:
-   - verify a numerical record;
-   - resolve conflicting claims;
-   - update taxonomy;
-   - verify the current state of knowledge;
-   - fill a real evidence gap; or
-   - support an approved chapter concept not covered by the source pack.
+Do not replace it with a generic literature survey.
 
-Do not perform broad literature discovery by default when the curated source pack is sufficient. External searching must have a named claim or approved concept as its purpose. Prefer primary literature for specific experiments and quantitative claims, and authoritative reviews for synthesis. Verify every added bibliography record.
+Use external searching only for genuine needs such as:
 
-## Preflight
+- checking records or numerical claims;
+- resolving conflicting evidence;
+- current taxonomy;
+- important recent developments;
+- filling an evidence gap required by the approved chapter architecture.
 
-Before substantive work:
+Verify references before adding them to `references/bibliography.bib`.
 
-1. Read the repository instructions and relevant template completely.
-2. Read the complete target chapter if one exists, the complete curated source package and relevant neighbouring chapters where duplication or terminology conflicts are likely.
-3. Inspect the repository structure, current bibliography, TeachBooks configuration and public TOC.
-4. Inventory existing chapter artefacts and decide which can be reused.
-5. Confirm that the chapter is absent from the public TOC unless it is already an approved published chapter.
+# Human Gate 1 — chapter architecture
 
-## Human Gate 1 — architecture approval
+Before drafting the chapter, return a compact Gate 1 package containing:
 
-Produce a compact, regular Gate 1 package and then stop. Do not draft the publication chapter, produce final figures or begin the full evidence package until the user approves.
+## Chapter job
 
-Return exactly these sections:
+One short paragraph explaining what this chapter must teach and how it differs from neighbouring chapters.
 
-### Chapter job
+## Proposed TOC
 
-One short paragraph defining what the chapter must teach and how it differs from neighbouring chapters.
+The proposed section and subsection structure.
 
-### Proposed TOC
+## Learning outcomes
 
-The final proposed section and subsection structure. The template is a guide, not a checklist; merge or omit sections when narrative flow improves.
+Concise, testable outcomes.
 
-### Learning outcomes
+## Representative organisms / case studies
 
-Concise, testable outcomes describing what the reader should be able to explain, distinguish, predict or evaluate.
+Usually 3–6 where appropriate, each with a clear teaching role.
 
-### Representative organisms / case studies
+## Claims needing careful verification
 
-Usually three to six where appropriate. Give each a distinct pedagogical role; do not create a taxonomic catalogue.
+Only important quantitative, ecological, taxonomic or record-level claims likely to need explicit checking.
 
-### Key quantitative or ecological claims requiring verification
+## Figures and tables
 
-List only claims likely to need careful checking, with the endpoint, condition or unit that matters.
-
-### Provisional visual plan
-
-For every proposed major figure or table give:
+For each proposed major figure or table provide:
 
 - working title;
-- question answered;
-- type: mechanism / environment / comparison / quantitative diagram / photograph / table;
-- a two-to-four-sentence concept description;
-- why the concept is better represented visually than in prose; and
-- intended chapter location.
+- what it should teach;
+- type of visual;
+- intended location in the chapter.
 
-This plan defines the visual architecture but does not freeze minor compositional decisions.
+Keep this concise. Detailed figure design happens later under `FIGURE_STYLE.md`.
 
-### Evidence gaps / conflicts
+## Evidence gaps or conflicts
 
-List only issues that could materially alter chapter architecture or scientific framing.
+Only issues that could materially change the chapter structure or scientific framing.
 
-End with: **Human Gate 1 decision required: approve, approve with changes, or return for revision.**
+Stop here.
 
-Do not proceed until the user approves Gate 1.
+Human Gate 1 decision:
 
-## Post-Gate-1 automated production
+- approve;
+- approve with changes;
+- return for revision.
 
-After Gate 1 approval, run the following sequence without further human interruption unless a genuine architecture-changing scientific conflict emerges. Record internal findings in the existing chapter production artefacts; do not ask the user to approve routine stage transitions.
+Do not draft the chapter until Gate 1 is approved.
 
-### 1. Evidence package
+# Automated production after Gate 1
 
-- Inventory all existing chapter sources and preserve provenance and contributor attribution.
-- Extract useful claims, examples, analogies and distinctive teaching logic.
-- Map claims to sources and distinguish established knowledge, interpretation, hypothesis and speculation.
-- Verify high-risk quantitative, taxonomic and ecological claims.
-- Use targeted external literature search only where the source-precedence rules permit it.
-- Build a concise claim–reference map and a bounded list of unresolved issues.
-- Update `references/bibliography.bib` only with verified records actually used by the approved chapter.
+Once Gate 1 is approved, complete the chapter without further human interruption unless a genuine scientific problem would require changing the approved architecture.
 
-### 2. Chapter reconstruction / drafting
+Run the following sequence:
 
-- Begin every publication chapter with one visible H1 in the exact form `# NN. Chapter title`. The two-digit number must match the publication filename and chapter identity; the title text must match front matter and the canonical TOC entry.
-- Write to the approved job, architecture and learning outcomes.
-- Preserve the author's lecture logic, memorable explanations, strong analogies and distinctive material where scientifically defensible.
-- Use clear British English for interdisciplinary advanced undergraduate, MSc and early PhD readers.
-- Lead with mechanisms and causal sequences rather than catalogues.
-- Avoid generic filler, rhetorical boilerplate, fact stacking and review-article accumulation.
-- Use concrete examples that perform a defined pedagogical role.
-- Preserve local meaning when cross-referencing other chapters.
-- Make the chapter independently readable but not independently comprehensive.
-- Keep methods only where they help interpret evidence and applications brief and mechanism-led.
+1. evidence synthesis;
+2. chapter drafting;
+3. independent scientific review;
+4. scientific revision;
+5. editorial pass;
+6. figures and tables;
+7. final integration;
+8. QA, HTML rendering and PDF generation.
 
-### 3. Independent scientific review
+Use the approved Gate 1 architecture as the chapter contract.
 
-Review the complete chapter independently against the evidence package and cited literature. Report findings before revision.
+## Evidence synthesis
 
-Assign both ratings:
+Read and use the complete curated source package.
 
-- **Scientific quality:** Excellent / Good / Adequate / Unsatisfactory
-- **Publication readiness:** Ready / Minor / Major / Reject
+Identify:
 
-Review specifically for:
+- key mechanisms;
+- representative examples;
+- important quantitative evidence;
+- useful lecture material and analogies;
+- evidence boundaries and unresolved questions.
 
-- factual correctness and current taxonomy;
-- causal coherence;
-- representative examples and whether each performs distinct work;
-- quantitative and ecological relevance;
-- overgeneralisation or inference beyond the evidence;
-- unsupported claims and claim–citation mismatch;
-- uneven depth among parallel concepts;
-- confusing or incomplete mechanisms;
-- redundancy and fact stacking;
-- abrupt cross-references that remove necessary local explanation; and
-- caveats that are scientifically necessary rather than defensive prose.
+Use targeted external literature only where needed.
 
-Classify actionable findings by severity and identify the evidence and bounded corrective action. Do not expand scope merely because more material exists.
+Create only the production records that are genuinely useful.
 
-### 4. Scientific revision
+## Drafting
 
-- Apply a targeted revision against the review findings.
-- Do not reconstruct the chapter unless the review identifies a genuine structural failure.
-- Preserve strong teaching anchors, contributor insights and the author's voice.
-- Record every material review finding and its resolution.
+Write the chapter according to:
 
-### 5. Editorial pass
+- the approved Gate 1 architecture;
+- `STYLE_GUIDE.md`;
+- `BOOK_CONVENTIONS.md`;
+- the relevant chapter template where one exists.
 
-Focus on:
+Preserve the author's teaching logic and distinctive source selection.
 
-- clarity, continuity and causal order;
-- accessibility without removal of scientific depth;
-- removal of generic or filler sentences;
-- comparable depth for parallel mechanisms unless the evidence justifies asymmetry;
-- chapter rhythm: explanation, evidence and synthesis;
-- avoiding repeated use of the same organism unless the later use genuinely builds on the first; and
-- concise, locally meaningful cross-references.
+The chapter must begin with:
 
-Do not reopen scientific scope during copy-editing.
+# NN. Chapter title
 
-### 6. Figures and tables
+The chapter should be independently readable without becoming encyclopaedic.
 
-- Use the visual architecture approved at Gate 1 and follow `FIGURE_STYLE.md`.
-- Major figures must visualise major chapter concepts, not evidence bookkeeping.
-- Begin from the scientific object, environment or dataset rather than from boxes and arrows.
-- Use programmatic SVG for quantitative plots and genuinely schematic diagrams.
-- Use image generation for illustrated mechanism and environment figures.
-- Use a hybrid image-generated base plus vector/text overlays where it improves scientific illustration, typography, axes or annotations.
-- Put the figure title inside the figure.
-- Use a pure white background and sans serif text.
-- Assume a maximum placed width of approximately 180 mm.
-- Use no text below 8.5 pt at final size; prefer 9–11 pt labels.
-- Do not add decorative or random microorganisms to abstract diagrams.
-- Keep figures editable where practical and record source, provenance and licensing.
-- Treat a figure as complete only when its scientific concept is approved; one final asset has been selected; rejected or intermediate candidates have been removed from publication directories or clearly excluded from publication; a final production filename has been assigned; caption, alt text, prose callout and provenance/licensing are complete; the chapter references that final asset; and the rendered result has been inspected successfully. Generating one or more candidates does not complete a figure.
-- Do not leave ambiguous competing figure versions in publication directories without an explicit production reason. Editable sources must be named clearly as sources rather than as alternative publication assets.
-- Produce complete figures before Gate 2. Placeholders do not qualify for Gate 2.
+## Scientific review
 
-### 7. Final integration
+Review the complete draft independently against the evidence.
+
+Report:
+
+Scientific quality:
+- Excellent
+- Good
+- Adequate
+- Unsatisfactory
+
+Publication readiness:
+- Ready
+- Minor
+- Major
+- Reject
+
+Focus on scientific correctness, causal coherence, evidence support, representative examples, quantitative claims, overgeneralisation, redundancy and missing conceptual links.
+
+Do not expand the chapter merely because additional literature exists.
+
+## Scientific revision
+
+Resolve the review findings with targeted changes.
+
+Do not reconstruct the chapter unless a genuine structural failure has been identified.
+
+## Editorial pass
+
+Improve clarity, flow and accessibility.
+
+Remove generic filler, unnecessary repetition and review-article accumulation.
+
+Preserve the author's voice and the approved scientific scope.
+
+## Figures and tables
+
+Produce the figures and tables approved at Gate 1.
+
+Follow `FIGURE_STYLE.md`.
+
+A figure is not complete merely because an image has been generated.
+
+Before Gate 2, every final figure must be:
+
+- scientifically checked;
+- selected from any candidates;
+- assigned a final filename;
+- integrated into the chapter;
+- accompanied by caption and alt text;
+- referenced in the prose;
+- rendered successfully.
+
+Do not leave ambiguous competing figure versions in the publication directory.
+
+## Final integration
 
 Before Gate 2:
 
-- integrate all figures and tables into the chapter;
-- add complete captions and descriptive alt text;
-- add meaningful figure and table callouts in the prose;
-- verify that figure content and text make the same scientific claim;
-- verify provenance, permissions, licensing and attribution;
-- resolve all citation keys and update the central bibliography where needed; and
-- remove superseded placeholders and production language from publication prose.
+- integrate all figures and tables;
+- resolve citations;
+- update the central bibliography;
+- remove placeholders;
+- verify chapter number and title;
+- verify internal cross-references;
+- verify figure and table callouts.
 
-### 8. Validation
+# Validation and rendering
 
-Run the repository QA command for the chapter:
+Run:
 
-```bash
 python3 scripts/chapter_qa.py book/NN_chapter_slug.md
-```
 
-For Gate 2 readiness, rerun QA with the completed PDF artefact:
+Then render the chapter using the repository's established TeachBooks/Jupyter Book workflow.
 
-```bash
-python3 scripts/chapter_qa.py book/NN_chapter_slug.md --gate2 --pdf path/to/chapter-review.pdf
-```
+Produce both:
 
-Static QA must pass before Gate 2. The default build mode runs TeachBooks when its CLI is available and otherwise reports the missing runtime. Before Gate 2, render the chapter with the repository build system. If an unapproved chapter is absent from the public TOC, use an isolated temporary build configuration; do not modify the canonical TOC merely to test rendering.
+- rendered HTML;
+- canonical review PDF.
 
-Every Gate 2 package must include a rendered chapter PDF produced through the repository's supported TeachBooks/Jupyter Book build route. The PDF is mandatory: Gate 2 cannot be marked **READY** when it is absent, and any PDF-build failure is a Gate 2 **BLOCKER** that sets readiness to **BLOCKED**. Missing standard build dependencies must be installed or otherwise resolved within the established toolchain; they are not grounds for waiving the PDF requirement. For the current Jupyter Book `pdfhtml` route, install the repository requirements and run `python -m playwright install chromium` when the Playwright browser runtime is absent.
+The canonical Gate 2 PDF must be:
 
-Inspect the rendered HTML and the complete PDF, not only the source files. Confirm:
+book/NN_chapter_slug.pdf
 
-- the visible chapter number and title;
-- figure and table placement;
-- caption association;
-- absence of cropping or aspect-ratio distortion;
-- legibility at the intended placement size;
-- absence of obvious broken references; and
-- absence of unresolved placeholders.
+Temporary build files under `build/` are not Gate 2 deliverables.
 
-Record the HTML build location, exact PDF path, PDF page count and inspection result. Static QA and successful build commands do not by themselves establish visual correctness. Resolve purely mechanical, unambiguous issues, but do not change scientific meaning merely to satisfy a heuristic warning. Distinguish chapter errors, repository-wide errors and pre-existing warnings, and record what static checks, builds and manual render inspection can and cannot establish.
+Inspect the HTML and PDF for obvious rendering problems, including:
 
-## Human Gate 2 — complete chapter approval
+- correct chapter number and title;
+- missing or cropped figures;
+- unreadable figure labels;
+- broken tables;
+- misplaced captions;
+- unresolved placeholders;
+- broken citations or references.
 
-Gate 2 is approval of the complete publication package, not a prose-only review. Present Gate 2 only when:
+If the canonical PDF cannot be produced, Gate 2 is blocked.
 
-- the final scientific text is integrated;
-- every figure is complete under the final-asset definition above and every table is final or near-final;
-- captions are complete;
-- alt text is present;
-- figure and table callouts are present;
-- bibliography entries are verified and citation keys resolve;
-- static repository QA passes;
-- the repository HTML build has succeeded, the mandatory chapter PDF exists, and both rendered outputs have passed the required inspection;
-- remaining genuine scientific uncertainties are listed.
+# v0.1
 
-Return the package in a compact review form containing:
+For this project:
 
-1. publication chapter path and version/status;
-2. approved job and learning outcomes for reference;
-3. figures and tables with final paths and production/provenance status;
-4. scientific-review ratings and resolution summary;
-5. citation and bibliography status;
-6. QA command and result, HTML build status, exact PDF path, PDF page count and visual-inspection result;
-7. remaining genuine scientific uncertainties or `none`; and
-8. an explicit Gate 2 decision request: approve, approve with changes, or return for revision.
+v0.1 = Gate 1 approved + automated production complete + Gate 2 pending
 
-The user reviews:
+A v0.1 chapter therefore has:
 
-- scientific accuracy;
-- causal and conceptual coherence;
-- interdisciplinary accessibility;
-- representative examples;
-- quantitative and ecological relevance;
-- figure–text integration;
-- visual scientific accuracy;
-- whether figures clarify rather than duplicate prose; and
-- voice and pedagogy.
+- complete text;
+- scientific review and revision completed;
+- figures and tables integrated;
+- QA passed;
+- HTML rendered;
+- canonical PDF produced;
+- Human Gate 2 still pending.
 
-Changes requested at Gate 2 are Gate 2 revision, not a third gate. Repeat the integrated package review after those changes.
+v0.1 does not mean published or author-approved.
 
-After Gate 2 approval:
+# Human Gate 2 — author review
 
-- allow only technical corrections or changes explicitly requested by the user;
-- do not add new science, major sections or new conceptual figures without returning the affected material to the user;
-- modify the public TOC, mark the chapter published, commit, push or publish only after explicit instruction and in accordance with Stage 8 and repository policy.
+Gate 2 is review of the complete chapter package.
 
-## Permanent pedagogical lessons from the Psychrophiles pilot
+Return:
 
-Apply these rules explicitly:
+1. chapter path;
+2. canonical PDF path;
+3. chapter version/status;
+4. scientific-review result;
+5. figures and tables included;
+6. QA and render result;
+7. remaining genuine scientific uncertainties, if any.
 
-- Concrete explanation is better than defensive boilerplate.
-- If a sentence could be moved unchanged to another extremophile chapter, make it parameter-specific, move it to its primary conceptual home, or delete it.
-- Explain a complex mechanism first as a simple causal chain, then add qualifications and exceptions.
-- Give parallel concepts comparable conceptual resolution unless there is a scientific reason not to.
-- A representative organism should normally do its main pedagogical work once; a later use must add a genuinely new connection.
-- A cross-reference must preserve local meaning in this order: what the concept means here; why it matters here; the specific connection being made; then the deeper treatment elsewhere.
-- Avoid fact stacking. Normal section logic is: question or problem → explanatory sequence → examples or evidence → synthesis.
-- Preserve memorable lecture and course material when scientifically defensible.
-- Include concrete limits and representative organisms in extremophile chapters where relevant.
-- Distinguish growth, reproduction, activity, maintenance, survival, viability, detection and biomolecular persistence when discussing limits.
-- Ecology must answer “why does this matter on Earth?” through robust, system-specific examples, measurements, processes, reservoirs or effects.
-- Do not write generic sentences saying ecological importance “must be demonstrated”; demonstrate it with a bounded example or omit the claim.
-- Avoid excessive qualification that weakens clear science. Keep only caveats that change interpretation.
+The primary review artefact is:
 
-## Default model allocation
+book/NN_chapter_slug.pdf
 
-Use this allocation when the named models and reasoning levels are available; otherwise use the nearest capable option and record the substitution.
+Human Gate 2 decision:
 
-| Work | Default model and effort |
-|---|---|
-| Supervisor / orchestration | Sol HIGH |
-| Source inventory, file inspection, mechanical extraction, duplication checks and routine QA | Luna MEDIUM |
-| Evidence synthesis, reference verification, targeted literature and claim–reference mapping | Terra HIGH |
-| Chapter reconstruction | Sol HIGH |
-| Independent final scientific review | Astra HIGH |
-| Scientific revision | Sol HIGH |
-| Routine validation and build | Luna MEDIUM |
+- approve;
+- approve with changes;
+- return for revision.
 
-Escalate model capability or reasoning effort only when the task actually requires it. Model allocation does not create extra human gates or authorise additional scope.
+Requested changes are implemented and the PDF is regenerated.
+
+This remains Gate 2; it does not create additional gates.
+
+After Gate 2 approval, the author may make a final direct edit of the Markdown for voice, wording and teaching refinement.
+
+Final publication is a separate technical step and requires explicit instruction.
+
+# Model allocation
+
+Use these defaults when available:
+
+- Supervisor / orchestration: Sol HIGH
+- Source inventory and routine mechanical work: Luna MEDIUM
+- Evidence synthesis and reference verification: Terra HIGH
+- Chapter drafting: Sol HIGH
+- Independent scientific review: Astra HIGH
+- Scientific revision: Sol HIGH
+- Routine QA and build: Luna MEDIUM
+
+Use a different model only when necessary.
+
+Model allocation must not create additional workflow stages or human gates.

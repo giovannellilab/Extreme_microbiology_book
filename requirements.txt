@@ -1,12 +1,11 @@
-# first list the packages you wish to download from PyPI
-teachbooks # depends on jupyter-book
-playwright # required by jupyter-book --builder pdfhtml; install its Chromium runtime
+# Core TeachBooks / Jupyter Book dependencies
+teachbooks
 jupyterbook-patches
 sphinx-image-inverter
 download_link_replacer
 sphinx-exercise
 teachbooks-sphinx-tippy
 
-# now list the packages (and the respective url) you wish to download from the GitLab package registry
+# Additional package registry used by TeachBooks extensions
 --extra-index-url https://gitlab.tudelft.nl/api/v4/projects/11239/packages/pypi/simple
 sphinx-thebe ~= 0.9.9

@@ -1,98 +1,173 @@
-# Extremophile / Adaptation Chapter Template
+# TEMPLATE_EXTREMOPHILE.md
 
-> Use this template for chapters centred on a major extremophilic strategy or class of organisms, such as psychrophiles, thermophiles, acidophiles, alkaliphiles, halophiles, piezophiles or xerophiles.
->
-> Follow `STYLE_GUIDE.md` and `AGENTS.md`.
->
-> Central logic:
->
-> **environmental condition → physicochemical consequence → cellular challenge → adaptation → ecological/evolutionary consequence**
+# Extremophile / adaptation chapter template
 
-This template is a guide to conceptual sequence, not a checklist. Prioritise chapter rhythm and causal explanation over compliance with every suggested heading. A typical extremophile chapter should contain five to seven substantive sections, followed by `Key concepts` and `Further reading`. Merge, rename or omit optional elements whenever this produces a clearer narrative.
+Use this template for chapters centred on a major extremophilic strategy or organism class, such as psychrophiles, thermophiles, acidophiles, alkaliphiles, halophiles, piezophiles or xerophiles.
 
-# [Living at / Life under ... : Chapter title]
+Follow:
+
+- `STYLE_GUIDE.md`
+- `BOOK_CONVENTIONS.md`
+- `FIGURE_STYLE.md`
+- `CHAPTER_PRODUCTION_PROMPT.md`
+
+Central logic:
+
+environmental condition
+→ physicochemical consequence
+→ cellular challenge
+→ adaptation
+→ ecological/evolutionary consequence
+
+This template is a guide, not a checklist.
+
+Merge, rename or omit sections when that improves the chapter.
+
+A typical chapter will contain about 5–7 substantive sections, followed by `Key concepts` and `Further reading`.
+
+# [NN. Chapter title]
 
 ## 1. Life under the extreme condition
 
-Define the environmental parameter and the operational terminology used in the chapter. Distinguish **-phile** from **-tolerant**, and explain that thresholds are operational rather than absolute when conventions differ.
+Define the environmental parameter and the operational terminology used in the chapter.
 
-Focus on parameter-specific records and examples rather than reproducing generic evidence theory taught in the general extremophile or limits-of-life chapter. Include only the limits and historical context needed to understand the subject. Where appropriate, distinguish:
+Where relevant, distinguish:
 
-- cardinal growth parameters;
-- optimum from tolerance;
-- detection, survival, activity, growth and reproduction;
-- changing estimates of biological limits.
+- -phile from -tolerant
+- optimum from tolerance
+- cardinal growth parameters
+- detection, survival, activity, growth and reproduction
+- measured limits from operational category boundaries
 
-Do not include chronology for its own sake or begin with a taxonomic list.
+Include the records and examples needed to make the condition concrete.
 
-## 2. What the extreme condition does to cells
+Do not begin with a taxonomic catalogue or unnecessary historical chronology.
 
-Explain the relevant physical and chemical changes first, then derive the cellular problems they create. Organise the discussion causally rather than as a catalogue of stress effects.
+## 2. What the condition does to cells
 
-Possible systems include membranes and transport, proteins and enzymes, nucleic acids and gene expression, osmotic or ionic homeostasis, cell envelopes, extracellular structures, metabolism and bioenergetics. Include only those needed for the extremophile class under discussion, and cross-reference foundational chapters rather than re-teaching them.
+Explain the physical and chemical consequences of the environmental condition before describing adaptations.
+
+Derive the biological problems causally.
+
+Relevant systems may include:
+
+- membranes and transport
+- proteins and enzymes
+- nucleic acids and gene expression
+- osmotic or ionic homeostasis
+- cell envelopes
+- extracellular structures
+- metabolism and bioenergetics
+
+Include only the systems that matter for the chapter.
+
+Cross-reference foundational chapters rather than re-teaching them in full.
 
 ## 3. How cells solve those problems
 
-Connect each adaptation explicitly to the challenge it addresses:
+Connect adaptations directly to the challenge they address:
 
-```text
 challenge
-    ↓
-cellular consequence
-    ↓
-adaptation
-    ↓
-trade-off or limitation
-```
+→ cellular consequence
+→ adaptation
+→ trade-off or limitation
 
-Organise adaptations by biological function. Prefer selected mechanisms that teach transferable principles over exhaustive lists of genes, proteins or traits. Discuss costs and trade-offs rather than presenting adaptation as cost-free optimisation.
+Organise adaptations by biological function.
 
-Representative organisms are teaching tools. When suitable, distribute approximately three to six memorable organisms through the chapter, each illustrating a distinct mechanism, discovery, ecological role or limit. Embed them as concise case studies rather than a standalone catalogue, and avoid retelling the same example in multiple sections. Use a comparison table only when it adds conceptual value.
+Prefer selected mechanisms that teach transferable principles over exhaustive lists of genes, proteins or traits.
 
-Methods should normally be integrated where they help readers interpret a claim. Use a short Methods Box only when a method is essential to understanding the evidence and would interrupt the main explanation. Do not create a standalone methods section by default.
+Discuss costs and trade-offs where they matter.
+
+Use representative organisms as teaching examples.
+
+Usually 3–6 memorable organisms are enough, each with a distinct role such as:
+
+- mechanism
+- discovery
+- ecological role
+- empirical limit
+
+Integrate them into the narrative rather than creating a standalone catalogue.
+
+Avoid retelling the same example in multiple sections.
 
 ## 4. The extreme never acts alone
 
-Explain the most important interactions with other environmental variables and show how the constraints modify one another rather than merely co-occur.
+Explain the most important interactions with other environmental variables.
 
 Examples may include:
 
-- cold + salinity;
-- temperature + pressure;
-- acidity + metals;
-- desiccation + radiation.
+- cold + salinity
+- temperature + pressure
+- acidity + metals
+- desiccation + radiation
 
-Treat polyextremophily as normal where appropriate. Select the interactions needed to explain the biology and cross-reference specialist chapters for detailed treatment.
+Show how the constraints modify one another rather than simply co-occurring.
+
+Treat polyextremophily as normal where appropriate.
+
+Cross-reference specialist chapters for detailed treatment.
 
 ## 5. Ecology and evolution
 
-Explain where these organisms occur and why, connecting distribution and ecological consequences to the physicochemical and energetic constraints already discussed. Include representative organisms, concrete ecological roles and quantitative significance where robust evidence exists. Address repeated evolutionary solutions where evidence permits.
+Explain where these organisms occur and why.
 
-Avoid catalogues of habitats, taxa or adaptations. Use representative examples to clarify general principles and move detailed ecosystem treatment to the relevant environment chapters.
+Connect ecology to the physicochemical and energetic constraints already discussed.
+
+Use representative examples rather than habitat catalogues.
+
+Where robust evidence exists, include concrete ecological significance such as:
+
+- measured rates
+- fluxes
+- reservoirs
+- abundance
+- defined ecosystem effects
+
+Address repeated evolutionary solutions where this helps explain the biology.
+
+Move detailed ecosystem treatment to the relevant environment chapters.
 
 ## 6. Research frontiers and broader significance
 
-Identify a small number of genuine unresolved questions, such as limits of growth, adaptation in uncultivated lineages, functional validation of candidate mechanisms, evolutionary origins, trade-offs or interacting extremes.
+Identify a small number of genuine unresolved questions.
 
-Applications are supporting material. Include only a few brief, mechanism-led examples that demonstrate why an adaptation matters. Do not survey industrial, medical or commercial uses. Refer readers to the dedicated biotechnology and applications chapter, `Extremophiles' contributions to society`, for detailed treatment.
+Examples may include:
 
-Where scientifically relevant, this section may include a short, topic-specific astrobiology component. Treat terrestrial organisms and environments as constrained analogues, not evidence of extraterrestrial life or habitability, and cross-reference the dedicated astrobiology chapter.
+- limits of growth
+- adaptation in uncultivated lineages
+- functional validation of proposed mechanisms
+- evolutionary origins
+- physiological trade-offs
+- interacting extremes
+
+Applications should be brief and mechanism-led.
+
+Detailed biotechnology belongs in the dedicated applications chapter.
+
+Where relevant, include a short and constrained astrobiology connection.
+
+Terrestrial extremophiles are analogues for testing hypotheses, not evidence of extraterrestrial life.
 
 ## 7. Key concepts
 
-The reader should be able to answer:
+Summarise what the reader should now understand.
 
-- What does this environmental condition do physically or chemically?
-- Why is that a problem for cells?
-- How do organisms solve it?
-- What trade-offs result?
-- Where and why do these organisms occur?
-- What remains uncertain, and what evidence would resolve it?
+The reader should be able to explain:
+
+- what the environmental condition changes physically or chemically
+- why this creates problems for cells
+- how organisms respond
+- what trade-offs result
+- where and why these organisms occur
+- what remains uncertain
 
 ## Further reading
 
-Provide approximately 5–10 carefully curated sources.
+Provide a short curated set of useful sources.
+
+Normally about 5–10 is sufficient.
 
 ## References
 
-References cited in the text are managed through the project bibliography.
+References cited in the text are managed through the central project bibliography.

@@ -2,337 +2,234 @@
 
 ## Purpose
 
-This document defines repository-wide conventions for the production of *Microbiology of Extreme Environments*. It complements, but does not replace:
+This file defines the repository and publication conventions for *Microbiology of Extreme Environments*.
 
-* `STYLE_GUIDE.md` (writing style and scientific conventions)
-* `AGENTS.md` (agent behaviour)
-* `workflows/` (chapter production SOPs)
+Writing style is defined in `STYLE_GUIDE.md`.
 
-These conventions aim to ensure that the book remains internally consistent across many contributors, editors and AI-assisted production workflows.
+Figure style is defined in `FIGURE_STYLE.md`.
 
----
+Agent behaviour is defined in `AGENTS.md`.
+
+Chapter production is defined in `CHAPTER_PRODUCTION_PROMPT.md`.
+
+Keep this file limited to repository structure, canonical artefacts and publication state.
 
 # Repository structure
 
-The repository distinguishes **production artefacts** from **publication content**.
+Publication content lives in:
 
-Production artefacts (source audits, evidence packages, reviews, figure plans, etc.) must never appear in the rendered TeachBooks book.
+`book/`
 
-Chapter files intended for publication live inside the TeachBooks content directory and may remain there while under audit or review. A chapter is rendered and published only when it is listed in `book/_toc.yml`; its location in `book/` does not publish it. No chapter may be added to `book/_toc.yml` before explicit manual editorial approval from Donato Giovannelli, and only Stage 8 may make that TOC change.
+Chapter-production records live in:
 
-Typical structure:
+`chapters/`
 
-```text
-book/
-chapters/
-workflows/
-figures/
-references/
-```
+Shared references live in:
 
----
+`references/`
 
-# Chapter filenames
+Production scripts live in:
 
-Publication chapters use the convention
+`scripts/`
 
-```text
-NN_short_title.md
-```
+Temporary build output may live in:
 
-Examples
+`build/`
 
-```text
-01_introduction.md
-02_extreme_environments.md
-17_psychrophiles.md
-18_thermophiles.md
-```
+Anything under `build/` is disposable and is not a canonical publication artefact.
 
-Rules
+# Chapter files
 
-* two-digit numbering
-* lowercase
-* snake_case
-* concise descriptive title
-* avoid abbreviations unless universally recognised
+Publication chapters use:
 
-Every publication chapter begins with exactly one visible H1 in this form:
+`NN_chapter_slug.md`
 
-```markdown
-# NN. Chapter title
-```
+Examples:
 
-The H1 number must match the two-digit filename prefix. Its title text must match `chapter_title` in front matter and the canonical TOC title; its chapter identity must also agree with the filename and `chapter_slug`. When a TOC entry has no separate title override, this numbered H1 supplies the rendered chapter title.
+`17_psychrophiles.md`
 
----
+`18_thermophiles_and_hyperthermophiles.md`
 
-# Development documents
+`28_deep_sea_hydrothermal_vents.md`
 
-Working documents remain outside the rendered book.
+Rules:
 
-Typical files include
+- two-digit chapter number
+- lowercase
+- snake_case
+- concise descriptive slug
 
-```text
-SOURCE_AUDIT.md
-EVIDENCE_PACKAGE.md
-EDITORIAL_REPORT.md
-SCIENTIFIC_REVIEW.md
-EDITORIAL_REVIEW.md
-FIGURE_PLAN.md
-```
+Every chapter begins with exactly one visible H1:
 
-These documents include YAML metadata and are not added to the TeachBooks table of contents.
+`# NN. Chapter title`
 
----
+The following must agree:
 
-# YAML metadata
+- chapter number
+- filename
+- `chapter_title`
+- `chapter_slug`
+- visible H1
+- canonical TOC
 
-All production artefacts begin with YAML front matter.
+# Canonical chapter artefacts
 
-Publication chapters also include YAML front matter appropriate for TeachBooks.
+For every chapter reaching Gate 2, the canonical review files are:
 
-Minimum metadata:
+`book/NN_chapter_slug.md`
 
-```yaml
-chapter_title:
-chapter_slug:
-document_type:
-workflow_stage:
-workflow_version:
-document_version:
-editor:
-status:
-created:
-last_updated:
-publication_content:
-teachbooks_rendered:
-```
+`book/NN_chapter_slug.pdf`
 
----
+The Markdown and PDF must share the same basename.
+
+Example:
+
+`book/18_thermophiles_and_hyperthermophiles.md`
+
+`book/18_thermophiles_and_hyperthermophiles.pdf`
+
+Temporary build files such as:
+
+`build/chapter18/_build/pdf/book.pdf`
+
+are internal build artefacts only.
+
+They do not count as the final Gate 2 PDF.
+
+# Publication state
+
+A chapter may exist in `book/` without being published.
+
+A chapter is part of the public book only when it is included in:
+
+`book/_toc.yml`
+
+Do not add a chapter to the public TOC merely to test rendering.
+
+Publication requires explicit author approval.
+
+# Human gates and v0.1
+
+The project uses two human gates.
+
+## Gate 1
+
+Gate 1 approves chapter architecture before drafting.
+
+## v0.1
+
+For this project:
+
+`v0.1 = Gate 1 approved + automated production complete + Gate 2 pending`
+
+A v0.1 chapter must have:
+
+- complete text
+- scientific review and revision completed
+- figures and tables integrated
+- citations resolved
+- QA passed
+- HTML rendered
+- canonical PDF produced
+
+## Gate 2
+
+Gate 2 is author review of the complete chapter package.
+
+The primary Gate 2 review artefact is:
+
+`book/NN_chapter_slug.pdf`
+
+Gate 2 may require revision and regeneration of the PDF.
+
+It remains the same gate until approved.
 
 # Figures
 
-Figures should be explanatory rather than decorative.
+Publication figures live in:
 
-Preferred formats
+`book/figures/`
 
-* SVG (preferred)
-* PDF (vector)
-* PNG (only when raster is unavoidable)
+Use stable names such as:
 
-Naming convention
+`fig18_01_cardinal_temperatures.svg`
 
-```text
-fig17_01.svg
-fig17_02.svg
-```
+`fig18_02_cellular_adaptations.png`
 
-Rules
+Editable source files may be retained where useful, but must be clearly marked as sources, for example:
 
-* one conceptual message per figure
-* avoid unnecessary colours
-* readable in print
-* include descriptive alt text
-* maintain editable source whenever possible
+`fig18_02_cellular_adaptations_source.svg`
 
-A figure is complete only when its scientific concept is approved; one final asset is selected; rejected or intermediate candidates are removed from publication directories or clearly excluded from publication; the final production filename, caption, alt text, prose callout and provenance/licensing are complete; the chapter references that final asset; and the rendered result has been inspected successfully. Generating candidates alone is not completion.
+Publication chapters must reference only the selected final assets.
 
-Publication directories must not contain ambiguous competing figure versions without an explicit production reason. Retained editable bases or overlays must be named clearly as source assets.
-
----
+Detailed visual rules are defined in `FIGURE_STYLE.md`.
 
 # Tables
 
-Naming convention
+Number tables by chapter:
 
-```text
-tab17_01
-tab17_02
-```
+`Table 18.1`
 
-Tables should summarise concepts or evidence rather than duplicate prose.
+`Table 18.2`
 
----
+Tables should be integrated directly into the chapter unless there is a clear technical reason to store them separately.
 
-# Equations
+# References
 
-Equations should use LaTeX.
+The central bibliography is:
 
-Only number equations that are referenced later.
+`references/bibliography.bib`
 
-Variables should follow SI conventions.
+The citation style is:
 
----
+`references/nature.csl`
 
-# Citations
+Do not create separate chapter bibliographies.
 
-All references are managed through BibTeX.
+Do not duplicate bibliography records unnecessarily.
 
-The manuscript contains citation keys only.
+# Production records
 
-Example
+Production records remain outside `book/`.
 
-```markdown
-...as previously proposed [@cavicchioli2016].
-```
+Typical examples include:
 
-Do not manually format references within the text.
+`EVIDENCE_PACKAGE.md`
 
-The rendered output will use the repository CSL style (Nature-style numbered citations unless changed globally).
+`SCIENTIFIC_REVIEW.md`
 
----
+`REVISION_CHANGELOG.md`
 
-# Bibliography
+`VALIDATION_REPORT.md`
 
-Maintain a single central bibliography whenever possible.
+Create only records that are useful.
 
-Avoid duplicate BibTeX entries.
-
-Every entry should include
-
-* authors
-* year
-* title
-* journal or publisher
-* volume
-* pages (where available)
-* DOI
-* URL only when appropriate
-
-Reference metadata must be verified before inclusion.
-
----
+Do not create files merely to satisfy a workflow formality.
 
 # Internal links
 
-Use relative links and repository-supported cross-references.
+Use relative repository links where practical.
 
-Avoid hard-coded URLs to rendered pages.
+Do not hard-code rendered website URLs when a repository-relative reference is sufficient.
 
----
+# Final publication
 
-# Cross-references
+After Gate 2 approval, the author may make final direct edits to the Markdown.
 
-Cross-reference concepts instead of repeating explanations.
+The publication pass should then be primarily technical:
 
-Prefer
+- rebuild
+- check links and citations
+- verify figures and tables
+- update TOC
+- regenerate required outputs
 
-> See Chapter X.
-
-rather than reproducing background material.
-
----
-
-# Boxes
-
-Boxes should be used sparingly.
-
-Appropriate uses include
-
-* historical notes
-* representative case studies
-* important conceptual warnings
-* definitions
-* outstanding questions
-
-Boxes are not intended for long digressions.
-
----
-
-# Representative organisms
-
-Representative organisms illustrate mechanisms.
-
-They should not become taxonomic catalogues.
-
-Each organism included in a chapter should have a clear pedagogical purpose and answer: “Why is this organism the best example here?” Familiarity alone is not sufficient.
-
----
-
-# Teaching anchors
-
-Each reconstructed chapter should contain approximately five to ten memorable conceptual statements integrated naturally into the prose. They should summarise difficult ideas, make causal relationships explicit, correct misconceptions or connect mechanisms into a general principle. They are not slogans or a separate summary device.
-
----
-
-# Chapter rhythm
-
-Chapters should alternate explanation, evidence and synthesis. Avoid long uninterrupted blocks of mechanistic detail. Use an essential figure, concise table, representative case or short synthesis paragraph where it materially improves comprehension.
-
----
-
-# Applications
-
-Applications illustrate biological significance.
-
-Detailed biotechnology belongs in the dedicated applications chapter.
-
-Extremophile chapters should include only a few mechanism-driven examples.
-
----
-
-# Numbering
-
-Figures
-
-```text
-Figure 17.1
-Figure 17.2
-```
-
-Tables
-
-```text
-Table 17.1
-Table 17.2
-```
-
-Boxes
-
-```text
-Box 17.1
-```
-
----
-
-# Language
-
-Writing conventions are defined in `STYLE_GUIDE.md`.
-
-Repository conventions never override the Style Guide.
-
----
-
-# Workflow
-
-All chapter production follows the SOPs in `workflows/`.
-
-The workflow is:
-
-1. Source audit
-2. Editorial approval
-3. Evidence package
-4. Chapter reconstruction
-5. Scientific review
-6. Editorial review
-7. Figures and tables
-8. Final publication
-
-Stages should not normally be skipped.
-
-Human Gate 2 requires passing static QA, a successful repository-system HTML render and a mandatory chapter-review PDF produced through the supported TeachBooks/Jupyter Book route. Both rendered outputs must be inspected for the visible numbered title, figure and table placement, caption association, cropping, legibility, obvious broken references and unresolved placeholders. A missing or failed PDF is a Gate 2 blocker; missing standard dependencies must be resolved rather than used to waive the requirement.
-
----
+Do not introduce substantial new scientific content during the publication pass without returning it to author review.
 
 # Editorial principle
 
-The objective is not to maximise information.
+Keep the repository simple.
 
-The objective is to maximise understanding.
+Prefer one clear convention over multiple parallel mechanisms.
 
-Every figure, table, reference, example and paragraph should have a clear pedagogical purpose.
-
-Whenever there is a choice between completeness and clarity, prefer clarity.
-
-When a conceptual diagram can replace a long explanation, prefer a precise figure placeholder to additional prose.
+Do not add new workflow layers, directories, metadata fields or production artefacts unless they solve a real problem.

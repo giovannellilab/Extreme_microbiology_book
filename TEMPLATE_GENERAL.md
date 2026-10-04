@@ -1,131 +1,117 @@
-# General / Concept Chapter Template
+# TEMPLATE_GENERAL.md
 
-> Use this template for foundational, conceptual, methodological and metabolism chapters that do not fit the extremophile or environment templates.
->
-> Follow `STYLE_GUIDE.md` and `AGENTS.md`.
->
-> Section titles below are guides, not mandatory wording. Preserve the conceptual function even when a different heading is more natural.
+# General / concept chapter template
 
-# [Chapter title]
+Use this template for foundational, conceptual, methodological and metabolism chapters that do not fit the extremophile or environment templates.
 
-## Why this matters
+Follow:
+
+- `STYLE_GUIDE.md`
+- `BOOK_CONVENTIONS.md`
+- `FIGURE_STYLE.md`
+- `CHAPTER_PRODUCTION_PROMPT.md`
+
+This template is a guide, not a checklist.
+
+Use only the sections needed for the conceptual job of the chapter.
+
+# [NN. Chapter title]
+
+## 1. Why this matters
 
 Open with the scientific problem the chapter helps the reader solve.
 
-Use a question, observation, contradiction, historical episode or concrete example when useful.
-
 By the end of the opening, the reader should understand:
-- what this chapter is about;
-- why it matters for extreme microbiology;
-- what conceptual problem will be resolved.
 
-## Core concepts and definitions
+- what the chapter is about
+- why it matters
+- what conceptual problem will be resolved
 
-Introduce only the terminology required for the chapter.
+Avoid generic introductions.
 
-For each important concept:
-1. explain the underlying idea in accessible language;
-2. introduce the technical term;
-3. use that term consistently thereafter.
+## 2. Core concepts
 
-Avoid turning this section into a glossary.
+Introduce only the terminology needed for the chapter.
 
-## Conceptual framework
+For important concepts:
 
-Explain the main mechanism or intellectual structure of the chapter.
+1. explain the underlying idea
+2. introduce the technical term
+3. use it consistently thereafter
+
+Do not turn this section into a glossary.
+
+## 3. Conceptual framework
+
+Explain the central mechanism or intellectual structure of the chapter.
 
 Prefer causal reasoning over lists.
 
-Where useful, organise the argument as:
+A useful generic sequence is:
 
-```text
 initial condition
-    ↓
-physical / chemical / biological constraint
-    ↓
-mechanism
-    ↓
-biological consequence
-    ↓
-environmental or evolutionary significance
-```
+→ constraint
+→ mechanism
+→ biological consequence
+→ environmental or evolutionary significance
 
-Use figures where a visual model would substantially improve understanding.
+Use a figure when it explains the framework more clearly than prose.
 
-## [Major topic 1]
+## 4. Major topics
 
-Develop the first major component of the chapter.
+Develop the chapter through the smallest number of substantive sections needed to explain the subject.
 
-Use representative organisms, pathways or examples only when they help explain the general principle.
+Representative organisms, pathways, experiments or environments should be included only when they help explain a general principle.
 
-## [Major topic 2]
+Do not create sections merely for completeness.
 
-Develop the second major component.
+Cross-reference concepts already taught elsewhere rather than re-teaching them in full.
 
-Cross-reference foundational concepts already taught elsewhere instead of re-teaching them in full.
+## 5. Evidence and examples
 
-## [Major topic 3]
+Explain how the central concepts are known when the evidence itself matters for understanding them.
 
-Add further major sections only when they are necessary for the conceptual job of the chapter.
+Relevant evidence may include:
 
-Do not create sections merely to make the treatment look comprehensive.
+- cultivation
+- physiology
+- geochemistry
+- microscopy
+- isotopes
+- genetics
+- genomics
+- experimental manipulation
+- modelling
 
-## How do we know this?
+Integrate methods into the main narrative where possible.
 
-Explain the main kinds of evidence used to establish the concepts in this chapter when this is scientifically important.
+Use a separate methods box or section only when it genuinely improves understanding.
 
-Possible topics include:
-- cultivation;
-- physiology;
-- geochemistry;
-- microscopy;
-- isotopes;
-- genetics;
-- genomics;
-- metagenomics;
-- transcriptomics;
-- experimental manipulation;
-- modelling.
+## 6. Research frontiers
 
-This may instead be presented as a Methods Box if the material would interrupt the main narrative.
+Identify a small number of genuine unresolved questions.
 
-## Representative examples or case studies
+Distinguish clearly between:
 
-Use one or a few examples that demonstrate the mechanism in practice.
+- established knowledge
+- current interpretation
+- hypothesis
+- speculation
 
-Examples should do intellectual work, not merely add named organisms or locations.
+Avoid generic statements that more research is needed.
 
-## Open questions and current research
+## Key concepts
 
-Identify genuinely unresolved questions or active research areas.
+Summarise the mental model the reader should retain.
 
-Clearly distinguish:
-- established knowledge;
-- current interpretation;
-- hypothesis;
-- speculation.
-
-Avoid generic statements that “more research is needed”.
-
-## Key concepts to retain
-
-Provide a short synthesis of the mental model the reader should leave with.
-
-Do not simply repeat the section headings.
-
-A good test is whether the reader can now use the chapter's principles to reason about an unfamiliar example.
+The reader should be able to use the chapter's principles to reason about an unfamiliar example.
 
 ## Further reading
 
-Provide approximately 5–10 carefully selected entry points into the literature.
+Provide a short curated set of useful entry points into the literature.
 
-Prefer a mixture of:
-- foundational papers;
-- authoritative reviews;
-- accessible introductions;
-- important methodological papers;
-- selected recent research where appropriate.
+Normally about 5–10 sources is sufficient.
 
 ## References
 
-References cited in the text are managed through the project bibliography.
+References cited in the text are managed through the central project bibliography.
