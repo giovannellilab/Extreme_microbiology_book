@@ -38,6 +38,20 @@ Temporary build output may live in:
 
 Anything under `build/` is disposable and is not a canonical publication artefact.
 
+ach chapter-production directory must use the same canonical numbered slug as the publication chapter:
+
+`chapters/NN_chapter_slug/`
+
+For example:
+
+`chapters/18_thermophiles_and_hyperthermophiles/`
+
+corresponds to:
+
+`book/18_thermophiles_and_hyperthermophiles.md`
+
+Do not create unnumbered production folders.
+
 # Chapter files
 
 Publication chapters use:

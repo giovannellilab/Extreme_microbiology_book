@@ -170,20 +170,18 @@ No additional human approval is required before Gate 2 unless a genuine scientif
 
 # Automated production after Gate 1
 
-Once Gate 1 is approved, complete the chapter without further human interruption.
+Once Gate 1 is approved, complete the chapter without further human interruption unless a genuine scientific problem requires changing the approved architecture.
 
-The production sequence is:
+Follow the workflow files in this order:
 
-1. evidence synthesis;
-2. chapter drafting;
-3. independent scientific review;
-4. scientific revision;
-5. editorial pass;
-6. figures and tables;
-7. final integration;
-8. QA, HTML rendering and PDF generation.
+1. `workflows/evidence_and_draft.md`
+2. `workflows/scientific_review_and_revision.md`
+3. `workflows/editorial_figures_integration.md`
+4. `workflows/validation_and_gate2.md`
 
-Use the approved `GATE1_PLAN.md` as the chapter contract throughout.
+Use the approved `GATE1_PLAN.md` as the authoritative chapter contract throughout.
+
+These workflow files may contain several internal tasks, but they do not create additional human gates.
 
 # Evidence synthesis
 
