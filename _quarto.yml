@@ -9,7 +9,7 @@ book:
   repo-actions: [edit, issue]
 
   chapters:
-    - book/intro.md
+    - index.md
     - book/18_psychrophiles.md
     - book/19_thermophiles_and_hyperthermophiles.md
     - book/references.md
