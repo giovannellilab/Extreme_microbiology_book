@@ -1100,7 +1100,7 @@ Avoid excessive parenthetical qualifications that make prose difficult to follow
 Use Markdown headings hierarchically.
 
 ```markdown
-# Chapter title
+# NN. Chapter title
 
 ## Major section
 
@@ -1108,6 +1108,8 @@ Use Markdown headings hierarchically.
 
 #### Minor subsection
 ```
+
+For publication chapters, the visible H1 must include the two-digit chapter number and title, consistent with front matter, filename identity and the canonical TOC.
 
 Do not skip heading levels without reason.
 

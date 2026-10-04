@@ -57,6 +57,14 @@ Rules
 * concise descriptive title
 * avoid abbreviations unless universally recognised
 
+Every publication chapter begins with exactly one visible H1 in this form:
+
+```markdown
+# NN. Chapter title
+```
+
+The H1 number must match the two-digit filename prefix. Its title text must match `chapter_title` in front matter and the canonical TOC title; its chapter identity must also agree with the filename and `chapter_slug`. When a TOC entry has no separate title override, this numbered H1 supplies the rendered chapter title.
+
 ---
 
 # Development documents
@@ -127,6 +135,10 @@ Rules
 * readable in print
 * include descriptive alt text
 * maintain editable source whenever possible
+
+A figure is complete only when its scientific concept is approved; one final asset is selected; rejected or intermediate candidates are removed from publication directories or clearly excluded from publication; the final production filename, caption, alt text, prose callout and provenance/licensing are complete; the chapter references that final asset; and the rendered result has been inspected successfully. Generating candidates alone is not completion.
+
+Publication directories must not contain ambiguous competing figure versions without an explicit production reason. Retained editable bases or overlays must be named clearly as source assets.
 
 ---
 
@@ -308,6 +320,8 @@ The workflow is:
 8. Final publication
 
 Stages should not normally be skipped.
+
+Human Gate 2 requires passing static QA, a successful repository-system HTML render and a mandatory chapter-review PDF produced through the supported TeachBooks/Jupyter Book route. Both rendered outputs must be inspected for the visible numbered title, figure and table placement, caption association, cropping, legibility, obvious broken references and unresolved placeholders. A missing or failed PDF is a Gate 2 blocker; missing standard dependencies must be resolved rather than used to waive the requirement.
 
 ---
 

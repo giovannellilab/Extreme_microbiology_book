@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="110mm" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Thermal–geochemical habitat</title>
+  <desc id="desc">A geothermal spring flows from a hot reduced source into a cooler, increasingly oxygenated acidic outflow. Iron(III)-oxide mats and a thermoacidophilic iron-oxidising niche develop where oxygen meets iron(II)-bearing water, while a broader thermophile community occupies the cooler downstream reach.</desc>
+  <rect width="1800" height="1100" fill="#ffffff"/>
+  <image href="fig18_03_thermal_geochemical_gradient_source_base.png" x="13" y="185" width="1774" height="887" preserveAspectRatio="xMidYMid meet"/>
+  <defs>
+    <linearGradient id="temp" x1="0" x2="1"><stop offset="0" stop-color="#aa5b3c"/><stop offset="1" stop-color="#6e9fa4"/></linearGradient>
+    <linearGradient id="oxygen" x1="0" x2="1"><stop offset="0" stop-color="#c9d4d2"/><stop offset="1" stop-color="#487f91"/></linearGradient>
+    <linearGradient id="redox" x1="0" x2="1"><stop offset="0" stop-color="#8c7770"/><stop offset="1" stop-color="#c4863e"/></linearGradient>
+    <marker id="arrowRust" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6b7472"/></marker>
+  </defs>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#263332">
+    <text x="72" y="72" font-size="56" font-weight="700">Thermal–geochemical habitat</text>
+    <text x="74" y="118" font-size="31" fill="#52615f">Coupled gradients sort microbial niches along an acidic geothermal outflow</text>
+
+    <g font-size="30" font-weight="700">
+      <text x="110" y="166" fill="#88452f">hot</text>
+      <line x1="190" y1="157" x2="1550" y2="157" stroke="url(#temp)" stroke-width="8" stroke-linecap="round"/>
+      <text x="1580" y="166" fill="#527f84">cooler</text>
+
+      <text x="110" y="211" fill="#697775">low O₂</text>
+      <line x1="230" y1="202" x2="1550" y2="202" stroke="url(#oxygen)" stroke-width="8" stroke-linecap="round"/>
+      <text x="1580" y="211" fill="#487f91">increasing O₂</text>
+
+      <text x="110" y="256" fill="#71625d">more reducing</text>
+      <line x1="340" y1="247" x2="1550" y2="247" stroke="url(#redox)" stroke-width="8" stroke-linecap="round"/>
+      <text x="1580" y="256" fill="#9a6329">more oxidising</text>
+    </g>
+
+    <g style="paint-order:stroke fill" stroke="#ffffff" stroke-width="11" stroke-linejoin="round">
+      <text x="74" y="410" font-size="38" font-weight="700">Hot, reduced source</text>
+      <text x="74" y="450" font-size="31">low O₂ • Fe(II) • sulphide</text>
+      <path d="M315 458 C335 470 345 486 360 512" fill="none" stroke="#6b7472" stroke-width="3" marker-end="url(#arrowRust)"/>
+
+      <text x="520" y="525" font-size="38" font-weight="700">Open-air mixing zone</text>
+      <text x="520" y="565" font-size="31">O₂ entry enables Fe(II) oxidation</text>
+      <path d="M770 575 C760 605 790 635 825 658" fill="none" stroke="#6b7472" stroke-width="3" marker-end="url(#arrowRust)"/>
+
+      <text x="690" y="700" font-size="36" font-weight="700">Fe(III)-oxide mat</text>
+      <text x="690" y="739" font-size="31">thermoacidophilic Fe(II) oxidisers</text>
+      <text x="690" y="778" font-size="31"><tspan font-style="italic">Metallosphaera</tspan><tspan>-like archaea</tspan></text>
+      <path d="M980 786 C1020 815 1060 845 1100 885" fill="none" stroke="#6b7472" stroke-width="3" marker-end="url(#arrowRust)"/>
+
+      <text x="1280" y="665" font-size="38" font-weight="700">Cooler outflow</text>
+      <text x="1280" y="705" font-size="31">more oxygenated water</text>
+      <text x="1280" y="744" font-size="31">broader thermophile community</text>
+      <path d="M1430 753 C1455 790 1495 840 1520 900" fill="none" stroke="#6b7472" stroke-width="3" marker-end="url(#arrowRust)"/>
+    </g>
+
+    <text x="1740" y="1065" text-anchor="end" font-size="30" fill="#52615f">Niches follow coupled physical and chemical gradients, not temperature alone.</text>
+  </g>
+</svg>

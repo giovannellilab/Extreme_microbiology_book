@@ -1,0 +1,8 @@
+@media print {
+  .figure-pair {
+    display: inline-block;
+    width: 100%;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+}
