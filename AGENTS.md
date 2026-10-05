@@ -94,11 +94,25 @@ There are two human gates:
 
 Do not introduce additional human approval stages.
 
-After Gate 1 approval, complete the automated production sequence unless a genuine scientific problem would require changing the approved architecture.
+Automated scientific, editorial and figure-quality reviews occur between the two human gates. They are quality checks, not additional human gates.
 
-A chapter is not Gate-2-ready until the canonical review PDF exists at:
+After Gate 1 approval, complete the automated production sequence unless a scientific, evidential, editorial or visual failure shows that the approved architecture must change.
 
-`book/NN_chapter_slug.pdf`
+If the architecture remains sound, resolve automated review findings without interrupting the editor.
+
+If the architecture itself caused the failure, return to Gate 1 rather than filling or surgically repairing a structurally weak chapter.
+
+A chapter is Gate-2-ready only when:
+
+- Scientific readiness is `Ready`;
+- Editorial readiness is `Ready`;
+- Figure readiness is `Ready` where applicable;
+- mechanical QA has passed;
+- rendered HTML has been inspected;
+- the canonical review PDF exists at `book/NN_chapter_slug.pdf`;
+- the canonical PDF has been inspected.
+
+A canonical PDF is necessary but does not by itself establish Gate 2 readiness.
 
 # Figures
 

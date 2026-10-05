@@ -84,7 +84,10 @@ The following must agree:
 - `chapter_title`
 - `chapter_slug`
 - visible H1
-- canonical TOC
+
+Once the chapter is approved for publication and added to the public book, its canonical TOC entry must use the same number, title and slug.
+
+An unpublished chapter does not require a public TOC entry.
 
 # Canonical chapter artefacts
 
@@ -130,6 +133,8 @@ The project uses two human gates.
 
 Gate 1 approves chapter architecture before drafting.
 
+Automated scientific, editorial and figure-quality reviews occur after Gate 1. They do not create additional human gates.
+
 ## v0.1
 
 For this project:
@@ -138,13 +143,35 @@ For this project:
 
 A v0.1 chapter must have:
 
-- complete text
-- scientific review and revision completed
-- figures and tables integrated
-- citations resolved
-- QA passed
-- HTML rendered
-- canonical PDF produced
+- complete chapter text;
+- scientific review passed and findings resolved;
+- editorial review passed and findings resolved;
+- figure-quality review passed where major figures are present;
+- final figures and tables integrated;
+- citations resolved;
+- mechanical QA passed;
+- HTML rendered and inspected;
+- canonical PDF produced and inspected.
+
+A chapter that is merely complete, scientifically accurate or renderable is not v0.1.
+
+## Gate 2
+
+Gate 2 is author review of the complete chapter package.
+
+The primary Gate 2 review artefact is:
+
+`book/NN_chapter_slug.pdf`
+
+Gate 2 may result in:
+
+- approval;
+- approval with changes;
+- return for revision;
+- rejection and reconstruction;
+- rejection and restart from Gate 1.
+
+Requested changes remain within Gate 2 unless the editor explicitly returns the chapter to Gate 1.
 
 ## Gate 2
 
@@ -206,19 +233,25 @@ Do not duplicate bibliography records unnecessarily.
 
 Production records remain outside `book/`.
 
-Typical examples include:
+Canonical chapter-production records may include:
+
+`GATE1_PLAN.md`
 
 `EVIDENCE_PACKAGE.md`
 
 `SCIENTIFIC_REVIEW.md`
 
-`REVISION_CHANGELOG.md`
+`EDITORIAL_REVIEW.md`
+
+`FIGURE_REVIEW.md`
 
 `VALIDATION_REPORT.md`
 
-Create only records that are useful.
+Create only records required by the current workflow or genuinely useful to the chapter.
 
-Do not create files merely to satisfy a workflow formality.
+Do not create parallel records that duplicate the same decision.
+
+Do not create files merely to make the workflow appear complete.
 
 # Internal links
 

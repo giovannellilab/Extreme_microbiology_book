@@ -2,75 +2,208 @@
 
 ## Purpose
 
-Turn the approved Gate 1 plan into a complete scientifically supported chapter draft.
+Turn the approved Gate 1 architecture into a scientifically supported, chapter-specific draft.
 
 The authoritative input is:
 
 `chapters/NN_chapter_slug/GATE1_PLAN.md`
 
-Do not change the approved chapter architecture unless a genuine scientific problem requires returning to the editor.
+Follow:
 
-## Evidence work
+- `AGENTS.md`
+- `CHAPTER_PRODUCTION_PROMPT.md`
+- `STYLE_GUIDE.md`
+- `BOOK_CONVENTIONS.md`
+- the relevant chapter template
+
+Do not change the approved architecture unless a scientific or evidential problem requires returning to Gate 1.
+
+# Pre-draft check
+
+Before drafting, confirm that the Gate 1 plan identifies:
+
+- the chapter’s organising principle;
+- prerequisite knowledge;
+- concepts excluded from re-teaching;
+- the scientific question answered by every major section;
+- an evidence anchor for every major section;
+- representative examples with defined teaching roles;
+- figure production modes.
+
+If any of these is materially absent, stop and return the plan for Gate 1 revision.
+
+Do not compensate for a weak section plan with generic background.
+
+# Evidence work
 
 Use sources in this order:
 
-1. author-provided material;
+1. author-provided lectures, notes, drafts and other material;
 2. author-curated chapter sources;
 3. the central bibliography;
 4. targeted external literature where needed.
 
-Verify claims that matter to the chapter, especially:
+Use external searching only to:
 
-- quantitative values;
-- limits and records;
-- taxonomy;
-- specific mechanisms;
-- ecological magnitudes;
-- contested or uncertain claims.
+- verify quantitative values;
+- verify limits or records;
+- resolve conflicting evidence;
+- update taxonomy;
+- check a specific mechanism;
+- establish what an experiment actually demonstrated;
+- fill an evidence gap required by the approved plan.
 
 Do not perform a general literature review.
 
-Do not add material merely because it is interesting.
+Do not broaden the chapter merely because more literature exists.
 
-Update:
+# Evidence package
+
+Create:
+
+`chapters/NN_chapter_slug/EVIDENCE_PACKAGE.md`
+
+Organise it by the approved chapter sections.
+
+For every major section, record:
+
+- the scientific question;
+- the principal evidence anchor;
+- supporting sources;
+- important claims requiring verification;
+- the endpoint demonstrated by the evidence;
+- limits that materially affect interpretation;
+- whether conclusions are site-specific or more general.
+
+Keep the evidence package concise.
+
+It is not an annotated bibliography or a catalogue of possible content.
+
+If a planned section lacks a convincing evidence anchor, stop and return the problem to the supervisor.
+
+Do not fill the section with general knowledge.
+
+# References
+
+Verify references before adding them to:
 
 `references/bibliography.bib`
 
-with verified references actually used by the chapter.
+Check as relevant:
 
-Create an internal evidence note only if it is genuinely useful.
+- authors;
+- title;
+- year;
+- publication details;
+- DOI;
+- study site;
+- experimental conditions;
+- measured endpoint;
+- quantitative values.
 
-## Drafting
+Use the central bibliography.
+
+Do not create a chapter-specific bibliography.
+
+Do not duplicate existing records unnecessarily.
+
+# Drafting
 
 Write the publication chapter at:
 
 `book/NN_chapter_slug.md`
 
-Follow:
+The chapter must begin with:
 
-- the approved `GATE1_PLAN.md`;
-- the relevant chapter template;
-- `STYLE_GUIDE.md`;
-- `BOOK_CONVENTIONS.md`.
+`# NN. Chapter title`
 
-Preserve the author's teaching logic, examples and source priorities.
+Draft each section from:
 
-Prefer causal explanation over fact accumulation.
+1. its approved scientific question;
+2. its evidence anchor;
+3. its representative examples;
+4. its connection to the chapter’s organising principle.
 
-Use representative examples rather than catalogues.
+Stop when the section’s question has been answered.
 
-Cross-reference foundational material rather than re-teaching it unnecessarily.
+Do not write towards a minimum word count.
 
-Flag unresolved scientific issues instead of inventing answers.
+Do not give every section equal length.
 
-## Figures and tables
+Do not fill an approved heading merely because it exists.
 
-The Gate 1 plan defines the intended major figures and tables.
+If the available evidence cannot support the planned section, stop and flag the problem instead of adding generic explanation.
 
-During drafting, include clear placeholders or provisional references where necessary, but do not redesign the figure programme without a scientific reason.
+# Chapter boundaries
 
-## Output
+Use prerequisite concepts established elsewhere in the book.
 
-Produce a complete chapter draft ready for independent scientific review.
+Do not re-teach material listed in Gate 1 as assumed knowledge or excluded content.
 
-No human approval is required before the next workflow step.
+Provide only the local orientation needed for the argument, then cross-reference the primary chapter.
+
+Preserve the author’s teaching logic, source priorities and distinctive examples.
+
+Apply the specificity, transfer and deletion tests defined in `STYLE_GUIDE.md`.
+
+# Evidence and uncertainty
+
+State the endpoint actually demonstrated by the evidence.
+
+Place necessary qualifications next to the claims they affect.
+
+Do not repeat general evidence hierarchies or methodological disclaimers throughout the chapter.
+
+Flag unresolved scientific issues rather than inventing answers.
+
+# Figures and tables
+
+Use the figure and table programme approved at Gate 1.
+
+During drafting:
+
+- place figure and table callouts where they support the argument;
+- prepare provisional captions or caption briefs;
+- identify which prose the figure will replace or clarify;
+- retain the approved figure production mode;
+- do not create a generic substitute for an approved illustration;
+- avoid repeating the same information in prose, figure and table.
+
+Final figure production and visual review occur in:
+
+`workflows/editorial_figures_integration.md`
+
+# Pre-review check
+
+Before scientific review, confirm that:
+
+- every major section answers its approved question;
+- every major section uses its evidence anchor;
+- citations support the associated claims;
+- foundational material has not been re-taught;
+- examples retain their assigned teaching roles;
+- headings identify scientific content;
+- generic background and filler have been removed;
+- the chapter follows its organising principle;
+- no section was expanded to satisfy an expected length.
+
+Correct failures before handing the draft to scientific review.
+
+# Output
+
+Produce:
+
+- `chapters/NN_chapter_slug/EVIDENCE_PACKAGE.md`
+- `book/NN_chapter_slug.md`
+
+The draft must be:
+
+- complete in argument;
+- scientifically supportable;
+- chapter-specific;
+- consistent with the approved Gate 1 architecture;
+- ready for independent scientific review.
+
+“Complete” does not mean that every possible topic or template category has been filled.
+
+No human approval is required before the next automated workflow stage unless the Gate 1 architecture must change.

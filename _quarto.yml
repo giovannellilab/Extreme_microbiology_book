@@ -5,6 +5,10 @@ project:
 book:
   title: "Microbiology of Extreme Environments"
   author: "Donato Giovannelli"
+
+  cover-image: book/figures/book_cover.png
+  cover-image-alt: "Cover of Microbiology of Extreme Environments"
+
   repo-url: https://github.com/giovannellilab/Extreme_microbiology_book
   repo-actions: [edit, issue]
   downloads: [pdf, epub]
