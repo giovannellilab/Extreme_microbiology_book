@@ -117,9 +117,9 @@ They do not count as the final Gate 2 PDF.
 
 A chapter may exist in `book/` without being published.
 
-A chapter is part of the public book only when it is included in:
+A chapter is part of the public book only when it is included under `book.chapters` in:
 
-`book/_toc.yml`
+`_quarto.yml`
 
 Do not add a chapter to the public TOC merely to test rendering.
 
@@ -172,18 +172,6 @@ Gate 2 may result in:
 - rejection and restart from Gate 1.
 
 Requested changes remain within Gate 2 unless the editor explicitly returns the chapter to Gate 1.
-
-## Gate 2
-
-Gate 2 is author review of the complete chapter package.
-
-The primary Gate 2 review artefact is:
-
-`book/NN_chapter_slug.pdf`
-
-Gate 2 may require revision and regeneration of the PDF.
-
-It remains the same gate until approved.
 
 # Figures
 
