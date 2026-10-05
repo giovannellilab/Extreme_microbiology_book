@@ -55,7 +55,9 @@ It does not assess scientific, editorial or visual quality.
 
 # Rendering
 
-Render the chapter using the established TeachBooks/Jupyter Book workflow.
+Render the chapter using the repository’s Quarto workflow and canonical `_quarto.yml` configuration.
+
+For an unpublished chapter, use an isolated temporary Quarto configuration. Do not add the chapter to `book.chapters` merely to render it for review.
 
 Produce:
 
@@ -73,10 +75,6 @@ Temporary files under:
 `build/`
 
 are disposable and are not Gate 2 deliverables.
-
-Do not modify the public TOC merely to test or render an unpublished chapter.
-
-Use an isolated or temporary rendering configuration where necessary.
 
 # Gate 2 QA
 

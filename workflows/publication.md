@@ -23,15 +23,15 @@ After those edits:
 - regenerate the PDF if required;
 - check citations, links, figures and tables.
 
-## Public TOC
+## Public chapter list
 
-Only after Gate 2 approval should the chapter be added to:
+Only after Gate 2 approval should the chapter be added under `book.chapters` in:
 
-`book/_toc.yml`
+`_quarto.yml`
 
-Use the approved chapter number, title and filename.
+Use the approved chapter number, title and filename, and place it in the correct chapter order.
 
-Do not add production records to the public TOC.
+Do not add production records to `book.chapters`.
 
 ## Final check
 

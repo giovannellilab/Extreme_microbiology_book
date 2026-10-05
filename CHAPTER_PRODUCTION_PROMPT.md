@@ -349,7 +349,8 @@ No additional human approval is required before Gate 2 unless:
 - a genuine scientific problem requires changing the architecture;
 - the approved architecture proves unable to support a chapter-specific draft;
 - the approved figure concept proves scientifically inappropriate;
-- evidence needed for a central section cannot be verified.
+- evidence needed for a central section cannot be verified;
+- an editorial or visual failure shows that the approved architecture or figure programme must change.
 
 Automated editorial and visual reviews are quality checks, not additional human gates.
 
@@ -709,7 +710,9 @@ For Gate 2, run:
 
 `python3 scripts/chapter_qa.py book/NN_chapter_slug.md --gate2`
 
-Then render the chapter using the established TeachBooks/Jupyter Book workflow.
+Then render the chapter using the repository’s Quarto workflow and canonical `_quarto.yml` configuration.
+
+For an unpublished chapter, use an isolated temporary Quarto configuration. Do not add the chapter to `book.chapters` merely to render it for review.
 
 Produce:
 
@@ -848,37 +851,52 @@ The publication pass should:
 
 # 23. Model allocation
 
-Use the lightest model capable of each task while protecting scientific, editorial and visual quality.
+Use the lightest model capable of each task while preserving the same scientific, editorial and visual acceptance standards.
 
-Default allocation when available:
+Use this resource-conserving default allocation:
 
-- Supervisor and orchestration: Sol, HIGH reasoning
-- Gate 1 architecture: Sol, HIGH reasoning
-- Source inventory and extraction: Luna, MEDIUM reasoning
-- Mechanical reference checks: Luna, MEDIUM reasoning
-- Evidence synthesis requiring scientific judgement: Sol, HIGH reasoning
-- Chapter drafting: Sol, HIGH reasoning
-- Independent scientific review: Astra, HIGH reasoning, bounded to the completed draft
-- Scientific revision: Sol, HIGH reasoning
-- Independent editorial-quality review: independent Sol, HIGH reasoning; escalate to Astra only when necessary
-- Editorial revision: Sol, HIGH reasoning
-- Figure planning and scientific art direction: Sol, HIGH reasoning
+- Routine supervision, file inspection and workflow tracking: Luna, MEDIUM reasoning
+- Gate 1 architecture: Sol, MEDIUM reasoning
+- Source inventory and extraction: Luna, LOW or MEDIUM reasoning
+- Mechanical reference checks: Luna, LOW reasoning
+- Structured evidence-package preparation: Luna, MEDIUM reasoning
+- Evidence synthesis requiring scientific judgement: Sol, MEDIUM reasoning
+- Chapter drafting: Sol, MEDIUM reasoning, section by section
+- Independent scientific review: independent Sol, MEDIUM reasoning
+- Scientific revision: Sol, MEDIUM reasoning
+- Independent editorial-quality review: independent Sol, MEDIUM reasoning
+- Editorial revision: Sol, MEDIUM reasoning
+- Figure planning and scientific art direction: Sol, MEDIUM reasoning
 - Image generation: approved image-generation workflow
 - Vector labels, overlays and mechanical figure preparation: Luna, MEDIUM reasoning
-- Figure-quality review: independent Sol, HIGH reasoning
-- Mechanical QA, rendering and build checks: Luna, MEDIUM reasoning
+- Figure-quality review: independent Sol, MEDIUM reasoning
+- Mechanical QA, rendering and build checks: Luna, LOW or MEDIUM reasoning
 
-Do not use Luna as the final authority for:
+Do not use Astra or HIGH reasoning by default.
+
+Escalate a bounded task to HIGH reasoning or Astra only when:
+
+- Gate 1 contains a consequential unresolved architectural choice;
+- conflicting evidence affects a central scientific claim;
+- scientific review identifies a high-risk uncertainty that Sol cannot resolve;
+- editorial review returns a structural failure whose cause remains unclear;
+- figure review identifies a consequential scientific or visual problem that cannot be resolved at the default level.
+
+Do not escalate the entire production pipeline because one bounded task is difficult.
+
+Run the workflow as bounded stages and pass the approved records between them. Do not keep a high-reasoning model active for routine extraction, formatting, rendering or status checks.
+
+Luna may prepare evidence and production materials, but it must not be the final authority for:
 
 - Gate 1 architecture;
-- chapter drafting;
 - scientific interpretation;
-- editorial acceptance;
+- scientific readiness;
+- editorial readiness;
 - figure art direction;
-- figure-quality acceptance.
+- figure readiness.
 
-Changing to a lighter model to conserve usage must not silently lower the acceptance standard.
+Changing model or reasoning effort must not lower the acceptance standard.
 
-If a lighter model reaches the limit of its assigned task, escalate the task rather than accepting a weak output.
+If a lighter model cannot complete its assigned task reliably, escalate only that task rather than accepting weak output.
 
 Model allocation must not create additional human gates.

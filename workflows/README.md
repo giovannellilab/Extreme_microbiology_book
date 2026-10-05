@@ -41,7 +41,7 @@ After Gate 1 approval, run:
 3. `editorial_figures_integration.md`
 4. `validation_and_gate2.md`
 
-These steps run without further human approval unless a genuine scientific problem requires changing the approved Gate 1 architecture.
+These steps run without further human approval unless a scientific, evidential, editorial or visual failure shows that the approved Gate 1 architecture must change.
 
 ## Human Gate 2
 
